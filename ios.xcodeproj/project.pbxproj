@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */; };
 		3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */; };
+		3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59192024FAF72C005CEAB6 /* SlideRight.swift */; };
 		3D71E50F24FAC6020061B556 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
@@ -38,6 +39,7 @@
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3D59192024FAF72C005CEAB6 /* SlideRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRight.swift; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */,
 				3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */,
+				3D59192024FAF72C005CEAB6 /* SlideRight.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
+				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
