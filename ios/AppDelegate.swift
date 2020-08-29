@@ -32,7 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let splashViewController = SplashViewController()
-        self.window?.rootViewController = UINavigationController(rootViewController: splashViewController)
+        
+        //loot view 변경
+        
+        let homeViewController = HomeViewController()
+        self.window?.rootViewController = UINavigationController(rootViewController: homeViewController)
         self.window?.makeKeyAndVisible()
         return true
     }

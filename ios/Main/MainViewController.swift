@@ -9,18 +9,26 @@
 import UIKit
 
 class MainViewController: BaseViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func pressedGetTutorials(_ sender: UIButton) {
         MainDataManager().getTutorials(self)
     }
     
+    //로그인 뷰 띄우기
+    @IBAction func tapTest(_ sender: UIButton) {
+        
+        let logInModal = LogInViewController(nibName: "LogInViewController", bundle: nil)
+        present(logInModal, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func pressedPresentPopUpView(_ sender: UIButton) {
         let noticePopUpStoryboard = UIStoryboard(name: "NoticePopUp", bundle: Bundle.main)
         guard let noticePopUp = noticePopUpStoryboard
             .instantiateViewController(withIdentifier: "NoticePopUp") as? NoticePopUp else {
-            return
+                return
         }
         noticePopUp.noticePopUpDelegate = self
         noticePopUp.modalPresentationStyle = .custom
@@ -31,7 +39,7 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 }

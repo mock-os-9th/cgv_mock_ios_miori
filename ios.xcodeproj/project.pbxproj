@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */; };
+		3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */; };
+		3D71E50F24FAC6020061B556 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInViewController.swift */; };
+		3D71E51024FAC6020061B556 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -32,6 +36,10 @@
 
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3D71E50D24FAC6020061B556 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3D71E50E24FAC6020061B556 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,24 @@
 				56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D59191B24FAD6AB005CEAB6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */,
+				3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D71E50C24FAC5C70061B556 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3D71E50D24FAC6020061B556 /* LogInViewController.swift */,
+				3D71E50E24FAC6020061B556 /* LogInViewController.xib */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		596D99A16687EBAF37438401 /* Frameworks */ = {
@@ -180,6 +206,8 @@
 				BD9BF17122F9C31D009E47EB /* config */,
 				BD9BF17022F9C318009E47EB /* Splash */,
 				BD9BF16F22F9C314009E47EB /* Main */,
+				3D59191B24FAD6AB005CEAB6 /* Home */,
+				3D71E50C24FAC5C70061B556 /* LogIn */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
@@ -251,8 +279,10 @@
 			files = (
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
+				3D71E51024FAC6020061B556 /* LogInViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
+				3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +339,7 @@
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
+				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
@@ -318,6 +349,7 @@
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				3D71E50F24FAC6020061B556 /* LogInViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
