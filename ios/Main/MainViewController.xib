@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="2Ux-Pa-HDR" id="ihV-ZU-XVw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메인 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ux-Pa-HDR">
+                    <rect key="frame" x="175" y="442.5" width="64" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-Jg-iJC">
+                    <rect key="frame" x="159.5" y="504" width="95" height="30"/>
+                    <state key="normal" title="서버와 통신하기"/>
+                    <connections>
+                        <action selector="pressedGetTutorials:" destination="-1" eventType="touchUpInside" id="CCZ-lA-u53"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K0-xU-cVa">
+                    <rect key="frame" x="166" y="566" width="82" height="30"/>
+                    <state key="normal" title="팝업뷰 띄우기"/>
+                    <connections>
+                        <action selector="pressedPresentPopUpView:" destination="-1" eventType="touchUpInside" id="muB-nm-5uu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xTd-Jg-iJC" firstAttribute="top" secondItem="2Ux-Pa-HDR" secondAttribute="bottom" constant="40.5" id="8Ox-eg-jaI"/>
+                <constraint firstItem="2Ux-Pa-HDR" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="8fK-3g-4Vp"/>
+                <constraint firstItem="2K0-xU-cVa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="A7J-hN-M9V"/>
+                <constraint firstItem="2K0-xU-cVa" firstAttribute="top" secondItem="xTd-Jg-iJC" secondAttribute="bottom" constant="32" id="ESe-Ez-PLw"/>
+                <constraint firstItem="2Ux-Pa-HDR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X3v-pq-KOT"/>
+                <constraint firstItem="xTd-Jg-iJC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bCr-EY-TYX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

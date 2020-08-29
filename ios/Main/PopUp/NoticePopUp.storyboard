@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notice Pop Up-->
+        <scene sceneID="mLk-Zg-2VJ">
+            <objects>
+                <viewController storyboardIdentifier="NoticePopUp" id="ZFB-mA-dVE" customClass="NoticePopUp" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Xl-49-aDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpr-DC-N5w">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddn-RF-pRq">
+                                <rect key="frame" x="47" y="268" width="320" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="TH2-Ti-8kt"/>
+                                    <constraint firstAttribute="height" constant="360" id="ep0-SZ-QPe"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-4T-G3X">
+                                <rect key="frame" x="192" y="652" width="30" height="30"/>
+                                <state key="normal" title="닫기"/>
+                                <connections>
+                                    <action selector="pressedDismiss:" destination="ZFB-mA-dVE" eventType="touchUpInside" id="Wdl-Jc-Jjh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팝업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-sD-Mg3">
+                                <rect key="frame" x="192" y="437.5" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Tpr-DC-N5w" secondAttribute="bottom" id="1wY-4S-vIt"/>
+                            <constraint firstItem="Ooe-sD-Mg3" firstAttribute="centerY" secondItem="Ddn-RF-pRq" secondAttribute="centerY" id="MxI-CD-mkh"/>
+                            <constraint firstItem="ui1-4T-G3X" firstAttribute="centerX" secondItem="Ddn-RF-pRq" secondAttribute="centerX" id="VAh-NL-MeD"/>
+                            <constraint firstItem="Tpr-DC-N5w" firstAttribute="top" secondItem="2Xl-49-aDH" secondAttribute="top" id="Wy4-KX-GuD"/>
+                            <constraint firstItem="Ddn-RF-pRq" firstAttribute="centerX" secondItem="Tpr-DC-N5w" secondAttribute="centerX" id="hkt-Tw-iSD"/>
+                            <constraint firstItem="Tpr-DC-N5w" firstAttribute="leading" secondItem="2Xl-49-aDH" secondAttribute="leading" id="l3v-R1-Mip"/>
+                            <constraint firstAttribute="trailing" secondItem="Tpr-DC-N5w" secondAttribute="trailing" id="p3E-VG-SPF"/>
+                            <constraint firstItem="ui1-4T-G3X" firstAttribute="top" secondItem="Ddn-RF-pRq" secondAttribute="bottom" constant="24" id="uEh-Tq-fCI"/>
+                            <constraint firstItem="Ddn-RF-pRq" firstAttribute="centerY" secondItem="Tpr-DC-N5w" secondAttribute="centerY" id="z7E-kJ-gKW"/>
+                            <constraint firstItem="Ooe-sD-Mg3" firstAttribute="centerX" secondItem="Ddn-RF-pRq" secondAttribute="centerX" id="zT9-u2-D9Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xKv-t0-nmu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P93-WI-nmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="62"/>
+        </scene>
+    </scenes>
+</document>
