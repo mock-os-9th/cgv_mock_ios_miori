@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var mainScrollView: UIScrollView!
+    
     let logInDrawer = LogInViewController(nibName: "LogInViewController", bundle: nil)
     let transition = SlideRight()
     
@@ -65,6 +67,20 @@ class HomeViewController: UIViewController {
         self.present(logInModal, animated: true, completion: nil)
      }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+        
+        mainScrollView.translatesAutoresizingMaskIntoConstraints = false
+        //위치지정  x위치
+        mainScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor
+            ,constant: 0).isActive = true // ---- 1
+        
+        mainScrollView.heightAnchor.constraint(equalToConstant: 896)
+            .isActive = true // ---- 3
+        mainScrollView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
+            .isActive = true // ---- 4
+        
+    }
     
     /*
      // MARK: - Navigation
