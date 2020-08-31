@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInMenuViewController: UIViewController {
     
     @IBOutlet weak var fixTopView: UIView!
     @IBOutlet weak var mainScrollView: UIScrollView!

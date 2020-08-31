@@ -19,7 +19,7 @@ class MainViewController: BaseViewController {
     //로그인 뷰 띄우기
     @IBAction func tapTest(_ sender: UIButton) {
         
-        let logInModal = LogInViewController(nibName: "LogInViewController", bundle: nil)
+        let logInModal = LogInMenuViewController(nibName: "LogInViewController", bundle: nil)
         present(logInModal, animated: true, completion: nil)
         
     }
