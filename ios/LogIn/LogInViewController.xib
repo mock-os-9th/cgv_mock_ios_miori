@@ -11,11 +11,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="detailInfo" destination="OBc-w3-aQ0" id="D4L-tl-9JJ"/>
+                <outlet property="fastO" destination="BPK-iw-eHR" id="2XQ-oz-sIp"/>
                 <outlet property="fixTopView" destination="zuP-yV-q2k" id="ZWG-AG-pim"/>
                 <outlet property="grayView" destination="CqE-WP-njl" id="0ZW-xF-eb4"/>
                 <outlet property="loginFiled" destination="zT6-jf-rVu" id="H3d-F4-y7G"/>
                 <outlet property="mainScrollView" destination="agz-uA-dHq" id="TqG-k2-ZFt"/>
+                <outlet property="movieR" destination="kM0-AA-s54" id="7dY-EO-NQ5"/>
+                <outlet property="photoT" destination="aW7-I7-SMb" id="1Hi-xd-PRC"/>
                 <outlet property="secondTopView" destination="rC4-4F-54s" id="AyF-C2-UU5"/>
+                <outlet property="theaterR" destination="QUY-b7-dvT" id="XBG-Mv-6ex"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -121,11 +125,79 @@
                                                 <constraint firstItem="zT6-jf-rVu" firstAttribute="leading" secondItem="rC4-4F-54s" secondAttribute="leading" constant="20" id="gH8-bQ-TQB"/>
                                             </constraints>
                                         </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tQ5-s7-yza">
+                                            <rect key="frame" x="26" y="188" width="315" height="81"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-AA-s54">
+                                                    <rect key="frame" x="0.0" y="0.0" width="61" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="movie_reser" translatesAutoresizingMaskIntoConstraints="NO" id="pDK-Ak-V5g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="59"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="영화별예매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-7U-idj">
+                                                            <rect key="frame" x="0.0" y="64" width="61" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QUY-b7-dvT">
+                                                    <rect key="frame" x="85" y="0.0" width="61" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="theater" translatesAutoresizingMaskIntoConstraints="NO" id="RPr-Sg-Wnp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="59"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="극장별예매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu3-2f-YRI">
+                                                            <rect key="frame" x="0.0" y="64" width="61" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-iw-eHR">
+                                                    <rect key="frame" x="170" y="0.0" width="61" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="fastorder" translatesAutoresizingMaskIntoConstraints="NO" id="s3D-54-1pr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="59"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="패스트오더" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-bc-07k">
+                                                            <rect key="frame" x="0.0" y="64" width="61" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-I7-SMb">
+                                                    <rect key="frame" x="255" y="0.0" width="60" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="phototicket" translatesAutoresizingMaskIntoConstraints="NO" id="Add-ra-WOb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="59"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="포토티켓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nba-Bb-cAy">
+                                                            <rect key="frame" x="0.0" y="64" width="60" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="tQ5-s7-yza" secondAttribute="height" multiplier="35:9" id="wJy-LV-cVW"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
+                                        <constraint firstItem="tQ5-s7-yza" firstAttribute="width" secondItem="zT6-jf-rVu" secondAttribute="width" multiplier="0.969231" id="1V3-kD-can"/>
                                         <constraint firstItem="rC4-4F-54s" firstAttribute="centerX" secondItem="CqE-WP-njl" secondAttribute="centerX" id="23a-WO-zLp"/>
                                         <constraint firstAttribute="height" constant="775" id="Gyb-Jm-PnQ"/>
+                                        <constraint firstItem="tQ5-s7-yza" firstAttribute="leading" secondItem="zT6-jf-rVu" secondAttribute="trailing" constant="-319" id="NX1-X4-iPV"/>
+                                        <constraint firstItem="tQ5-s7-yza" firstAttribute="top" secondItem="rC4-4F-54s" secondAttribute="bottom" constant="88" id="doS-tc-wRp"/>
                                         <constraint firstItem="rC4-4F-54s" firstAttribute="leading" secondItem="CqE-WP-njl" secondAttribute="leading" id="o75-5K-3i6"/>
                                         <constraint firstItem="rC4-4F-54s" firstAttribute="top" secondItem="CqE-WP-njl" secondAttribute="top" id="qtz-BL-fJT"/>
                                     </constraints>
@@ -159,6 +231,10 @@
     </objects>
     <resources>
         <image name="cgv_white" width="93" height="40"/>
+        <image name="fastorder" width="60" height="59"/>
+        <image name="movie_reser" width="60" height="59"/>
         <image name="nologinpf" width="82" height="81"/>
+        <image name="phototicket" width="60" height="59"/>
+        <image name="theater" width="60" height="59"/>
     </resources>
 </document>

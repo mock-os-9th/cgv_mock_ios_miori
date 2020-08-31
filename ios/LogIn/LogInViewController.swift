@@ -17,10 +17,15 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var grayView: UIView!
     @IBOutlet weak var detailInfo: UIStackView!
     
+    //영화별 예매, 극장별 예매, 패스트오더, 포퇴켓 버튼 이벤트
+    @IBOutlet weak var movieR: UIStackView!
+    @IBOutlet weak var theaterR: UIStackView!
+    @IBOutlet weak var fastO: UIStackView!
+    @IBOutlet weak var photoT: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -47,9 +52,9 @@ class LogInViewController: UIViewController {
         loginFiled.topAnchor.constraint(equalTo: fixTopView.bottomAnchor
             ,constant: 0).isActive = true // ---- 1
         loginFiled.heightAnchor.constraint(equalToConstant: 140)
-        .isActive = true // ---- 3
+            .isActive = true // ---- 3
         loginFiled.heightAnchor.constraint(equalToConstant: 325)
-        .isActive = true // ---- 3
+            .isActive = true // ---- 3
         
         
         //버튼 클릭 가능하게 서브뷰를 맨앞으로 빼줘
@@ -58,17 +63,33 @@ class LogInViewController: UIViewController {
         secondTopView.bringSubviewToFront(loginFiled)
         secondTopView.bringSubviewToFront(detailInfo)
         
+        
+        //uiVIew 를 터치했을 때 이벤트 생성
+        let singleTapGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(singleTap))
+        //한번 누르게 할거야
+        singleTapGesture.numberOfTouchesRequired = 1
+        self.movieR.addGestureRecognizer(singleTapGesture)
+        
+        // Do any additional setup after loading the view.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @objc func singleTap() {
+        print("hello")
+    }
     
 }
+
+
+
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+
