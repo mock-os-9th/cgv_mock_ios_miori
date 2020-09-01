@@ -10,6 +10,10 @@
 		3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */; };
 		3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */; };
 		3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59192024FAF72C005CEAB6 /* SlideRight.swift */; };
+		3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */; };
+		3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */; };
+		3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */; };
+		3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */; };
 		3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
@@ -40,6 +44,10 @@
 		3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		3D59192024FAF72C005CEAB6 /* SlideRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRight.swift; sourceTree = "<group>"; };
+		3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LInputViewController.swift; sourceTree = "<group>"; };
+		3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LInputViewController.xib; sourceTree = "<group>"; };
+		3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJ1ViewController.swift; sourceTree = "<group>"; };
+		3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJ1ViewController.xib; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +105,24 @@
 				3D59192024FAF72C005CEAB6 /* SlideRight.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3D5CB1EA24FDFF2C00A12CF7 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */,
+				3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		3D5CB1F324FE179400A12CF7 /* CJONE1 */ = {
+			isa = PBXGroup;
+			children = (
+				3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */,
+				3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */,
+			);
+			path = CJONE1;
 			sourceTree = "<group>";
 		};
 		3D71E50C24FAC5C70061B556 /* LogInMenu */ = {
@@ -206,11 +232,13 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				3D5CB1F324FE179400A12CF7 /* CJONE1 */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				BD9BF17022F9C318009E47EB /* Splash */,
 				BD9BF16F22F9C314009E47EB /* Main */,
 				3D59191B24FAD6AB005CEAB6 /* Home */,
 				3D71E50C24FAC5C70061B556 /* LogInMenu */,
+				3D5CB1EA24FDFF2C00A12CF7 /* LogIn */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
@@ -280,7 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
@@ -343,12 +373,14 @@
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
+				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
+				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
