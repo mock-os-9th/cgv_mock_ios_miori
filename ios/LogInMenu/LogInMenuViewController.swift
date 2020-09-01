@@ -28,6 +28,26 @@ class LogInMenuViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    
+    @IBAction func pressLogin(_ sender: UIButton) {
+        let loginput = LInputViewController(nibName: "LInputViewController", bundle: nil)
+        //        //full screen으로
+        //
+        loginput.modalPresentationStyle = .fullScreen
+        //
+        //        self.present(loginput, animated: false, completion: nil)
+        // currentVC => FirstViewController
+        guard let pvc = self.presentingViewController else { return }
+        
+        self.dismiss(animated: false) {
+            pvc.present(loginput, animated: true, completion: nil)
+
+        }
+        
+        
+        
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
         
@@ -47,7 +67,7 @@ class LogInMenuViewController: UIViewController {
         
         //self.view.addSubview(self.loginFiled)
         
-        //mainscrollview autolayout 지정
+        //loginField autolayout 지정
         loginFiled.translatesAutoresizingMaskIntoConstraints = false
         loginFiled.topAnchor.constraint(equalTo: fixTopView.bottomAnchor
             ,constant: 0).isActive = true // ---- 1
