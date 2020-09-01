@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     let logInDrawer = LogInMenuViewController(nibName: "LogInViewController", bundle: nil)
     let transition = SlideRight()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,7 +57,7 @@ class HomeViewController: UIViewController {
     
     // 메뉴버튼 클릭시 로그인 뷰 (navigation drawer) 나오게 하는 함수
     @objc func loginlogoDidTap() {
-        let logInModal = LogInMenuViewController(nibName: "LogInMenuViewController", bundle: nil)
+        let logInModal = LogInMenuViewController() //템플릿
         //full screen으로
         //logInModal.modalPresentationStyle = .fullScreen
         logInModal.modalPresentationStyle = .overCurrentContext
