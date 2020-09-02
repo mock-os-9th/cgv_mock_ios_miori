@@ -15,5 +15,6 @@ target 'ios' do
   pod 'Fabric', '~> 1.7.5'
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
+  pod 'Tabman', '~> 2.9'
 
 end
