@@ -10,21 +10,19 @@ import UIKit
 
 class CJ1ViewController: UIViewController {
     
+    
     override func viewWillLayoutSubviews() {
-        let width = self.view.frame.width
         
-        
-        
-        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y:35
-            , width: width, height: 44))
-        self.view.addSubview(navigationBar);
-        //let navigationItem = UINavigationItem(title: "Navigation bar")
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(backAction))
-        navigationItem.leftBarButtonItem?.tintColor = .black
-        
-        navigationBar.setItems([navigationItem], animated: false)
-        
+       
+        //왼쪽 엑스버튼
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(backAction))
+        //틴트는 검정색
+        self.navigationItem.leftBarButtonItem?.tintColor = .black
+        //배경은 화이트
+        self.navigationController?.navigationBar.barTintColor = .white
+        //라인 지우기
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+    
     }
     
     @objc func backAction(){
