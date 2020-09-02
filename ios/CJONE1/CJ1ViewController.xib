@@ -83,40 +83,37 @@
                                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ccm-Ry-Qw0">
                                                     <rect key="frame" x="40" y="90" width="334" height="2"/>
                                                 </progressView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="반가워요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQp-9q-eET">
-                                                    <rect key="frame" x="40" y="132" width="101" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQp-9q-eET">
+                                                    <rect key="frame" x="40" y="132" width="100.5" height="34"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CJ ONE회원가입을 위해서는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hU-hU-P5E">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CJ ONE회원가입을 위해서는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hU-hU-P5E">
                                                     <rect key="frame" x="40" y="195" width="339" height="34"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="본인인증이 필요합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euU-t1-XN1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증이 필요합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euU-t1-XN1">
                                                     <rect key="frame" x="40" y="237" width="267" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="이름이 뭐예요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QK-Bb-2F6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름이 뭐예요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QK-Bb-2F6">
                                                     <rect key="frame" x="40" y="656" width="118.5" height="24"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hz-Tg-UPC">
-                                                    <rect key="frame" x="40" y="688" width="334" height="34"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hz-Tg-UPC">
+                                                    <rect key="frame" x="40" y="688" width="339" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="성별은요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-ak-Xig">
-                                                    <rect key="frame" x="40" y="793" width="80" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별은요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-ak-Xig">
+                                                    <rect key="frame" x="40" y="793" width="79.5" height="24"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -124,11 +121,20 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.95687097310000002" green="0.93305975200000002" blue="0.95685833689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="leading" secondItem="ZQp-9q-eET" secondAttribute="leading" id="E8o-dv-ejc"/>
                                                 <constraint firstAttribute="height" constant="1400" id="FaY-zl-Ulg"/>
                                                 <constraint firstAttribute="trailing" secondItem="ccm-Ry-Qw0" secondAttribute="trailing" constant="40" id="KcB-Yu-lZ4"/>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="top" secondItem="ZQp-9q-eET" secondAttribute="bottom" constant="29" id="OJS-kf-qPf"/>
                                                 <constraint firstItem="a9m-fr-mBr" firstAttribute="top" secondItem="jp7-bF-PJu" secondAttribute="top" constant="43" id="OTe-mV-52A"/>
+                                                <constraint firstItem="0QK-Bb-2F6" firstAttribute="top" secondItem="jp7-bF-PJu" secondAttribute="top" constant="656" id="OsV-YQ-hLB"/>
+                                                <constraint firstItem="euU-t1-XN1" firstAttribute="top" secondItem="7hU-hU-P5E" secondAttribute="bottom" constant="8" id="Rjc-Qb-4H0"/>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="top" secondItem="jp7-bF-PJu" secondAttribute="top" constant="195" id="VAO-Rm-d6W"/>
                                                 <constraint firstItem="ccm-Ry-Qw0" firstAttribute="leading" secondItem="jp7-bF-PJu" secondAttribute="leading" constant="40" id="Waa-3k-tZd"/>
                                                 <constraint firstItem="1hz-Tg-UPC" firstAttribute="top" secondItem="0QK-Bb-2F6" secondAttribute="bottom" constant="8" id="Zqp-1K-Lhb"/>
+                                                <constraint firstItem="z9e-ak-Xig" firstAttribute="top" secondItem="1hz-Tg-UPC" secondAttribute="bottom" constant="71" id="eWo-nk-cdc"/>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="leading" secondItem="euU-t1-XN1" secondAttribute="leading" id="eec-kc-XI3"/>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="leading" secondItem="ccm-Ry-Qw0" secondAttribute="leading" id="i3X-Jo-sS0"/>
+                                                <constraint firstItem="7hU-hU-P5E" firstAttribute="leading" secondItem="z9e-ak-Xig" secondAttribute="leading" id="lz5-T2-k3F"/>
                                                 <constraint firstItem="ccm-Ry-Qw0" firstAttribute="top" secondItem="a9m-fr-mBr" secondAttribute="bottom" constant="20" id="xtP-vM-neY"/>
                                                 <constraint firstItem="1hz-Tg-UPC" firstAttribute="leading" secondItem="7hU-hU-P5E" secondAttribute="leading" id="ySH-nu-1HP"/>
                                                 <constraint firstItem="1hz-Tg-UPC" firstAttribute="trailing" secondItem="7hU-hU-P5E" secondAttribute="trailing" id="zBU-Pz-51d"/>
