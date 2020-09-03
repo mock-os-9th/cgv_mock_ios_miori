@@ -10,6 +10,10 @@ import UIKit
 
 class LInputViewController: UIViewController {
     
+    @IBAction func pressGetSignUpResult(_ sender: UIButton) {
+        SignInDataManager().getLogin(self)
+    }
+
     override func viewWillLayoutSubviews() {
         let width = self.view.frame.width
         
@@ -37,14 +41,14 @@ class LInputViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func tapSignUp(_ sender: UIButton) {
+    @IBAction func tapSingUp(_ sender: UIButton) {
         let cj1View = UINavigationController(rootViewController:CJ1ViewController(nibName: "CJ1ViewController", bundle: nil))
         //navigation안에
         cj1View.modalPresentationStyle = .fullScreen
         self.present(cj1View, animated: false, completion: nil)
         //self.navigationController?.pushViewController(cj1View, animated: true)
-
     }
+   
 }
 
 

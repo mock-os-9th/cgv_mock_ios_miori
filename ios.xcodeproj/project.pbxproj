@@ -32,6 +32,7 @@
 		3D617F6B250120C200EF92E0 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F6A250120C200EF92E0 /* SignInDataManager.swift */; };
 		3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
+		3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2288D2501818100A7847F /* LoginResultResponse.swift */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -82,6 +83,7 @@
 		3D617F6A250120C200EF92E0 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
+		3DF2288D2501818100A7847F /* LoginResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultResponse.swift; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		3D5CB1EA24FDFF2C00A12CF7 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				3DF2288C250180E900A7847F /* Entity */,
 				3D617F69250120A300EF92E0 /* DataManager */,
 				3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */,
 				3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */,
@@ -242,6 +245,14 @@
 				3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */,
 			);
 			path = LogInMenu;
+			sourceTree = "<group>";
+		};
+		3DF2288C250180E900A7847F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2288D2501818100A7847F /* LoginResultResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		596D99A16687EBAF37438401 /* Frameworks */ = {
@@ -499,6 +510,7 @@
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */,
 				3D617F6B250120C200EF92E0 /* SignInDataManager.swift in Sources */,
 				3D617F5A2500B2B600EF92E0 /* NotchView.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
