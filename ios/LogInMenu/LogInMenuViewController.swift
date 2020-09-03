@@ -30,7 +30,7 @@ class LogInMenuViewController: UIViewController {
     
     
     @IBAction func pressLogin(_ sender: UIButton) {
-        let loginput = LInputViewController(nibName: "LInputViewController", bundle: nil)
+        let loginput = LInputViewController()
         //        //full screen으로
         //
         loginput.modalPresentationStyle = .fullScreen
@@ -85,7 +85,7 @@ class LogInMenuViewController: UIViewController {
         
         
         //uiVIew 를 터치했을 때 이벤트 생성
-        let singleTapGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(singleTap))
+        let singleTapGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(movieRTap))
         //한번 누르게 할거야
         singleTapGesture.numberOfTouchesRequired = 1
         self.movieR.addGestureRecognizer(singleTapGesture)
@@ -93,8 +93,12 @@ class LogInMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @objc func singleTap() {
-        print("hello")
+    @objc func movieRTap() {
+        print("영화별예매눌림")
+        let theaherR = TopTapViewController()
+        //full screen으로
+        theaherR.modalPresentationStyle = .fullScreen
+        self.present(theaherR, animated: false, completion: nil)
     }
     
 }
