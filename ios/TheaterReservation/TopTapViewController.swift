@@ -12,19 +12,12 @@ import Pageboy
 
 class TopTapViewController: TabmanViewController {
     
-    private var viewControllers = [LogInMenuViewController(), UIViewController(),UIViewController()]
+    private var viewControllers = [TheaterRMainViewController(), UIViewController(),UIViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.dataSource = self
-        
-        //        // Create bar
-        //        let bar = TMBar.ButtonBar()
-        //        bar.layout.transitionStyle = .snap // Customize
-        //
-        //        // Add to view
-        //        addBar(bar, dataSource: self, at: .top)
         
         // Create bar
         let bar = TMBar.ButtonBar()
@@ -74,6 +67,7 @@ extension TopTapViewController: PageboyViewControllerDataSource, TMBarDataSource
         
         switch index {
         case 0:
+            print("0")
             return TMBarItem(title: "  영화별예매")
         case 1:
             return TMBarItem(title: "극장별예매")
