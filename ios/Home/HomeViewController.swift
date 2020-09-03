@@ -10,6 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    //bottom sheet 기본 호출
+    let bottomLauncher = BottomSheetLauncher()
+    let bottomLauncherUsingFrames = BottomSheetUsingFrames()
+    let sheetVc = SheetViewController()
+    
     @IBOutlet weak var mainScrollView: UIScrollView!
     
     let logInDrawer = LogInMenuViewController(nibName: "LogInViewController", bundle: nil)
@@ -48,6 +53,22 @@ class HomeViewController: UIViewController {
          let barButton2 = UIBarButtonItem(customView: login_btn)
          // navigation의 왼쪽에 bar button을 넣어
          self.navigationItem.rightBarButtonItem = barButton2
+        
+        //Dispatch Queue를 이용해 bottom sheet 1초 후에 띄우기
+        let seconds = 1.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            // Put your code which should be executed with a delay here
+            //print("hello")
+            self.sheetVc.view.translatesAutoresizingMaskIntoConstraints = false
+            self.view.addSubview(self.sheetVc.view)
+            
+            NSLayoutConstraint.activate([
+                self.sheetVc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+                self.sheetVc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                self.sheetVc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                self.sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            ])
+        }
         
     }
     //This method will call when you press button.

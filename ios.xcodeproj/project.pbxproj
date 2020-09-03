@@ -19,6 +19,13 @@
 		3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */; };
 		3D617F4E24FFC21700EF92E0 /* TheaterRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D617F4C24FFC21700EF92E0 /* TheaterRMainViewController.xib */; };
 		3D617F5224FFC46100EF92E0 /* TopTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F5124FFC46100EF92E0 /* TopTapViewController.swift */; };
+		3D617F562500B22100EF92E0 /* BottomSheetUsingFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F552500B22100EF92E0 /* BottomSheetUsingFrames.swift */; };
+		3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F572500B28600EF92E0 /* BottomSheetLauncher.swift */; };
+		3D617F5A2500B2B600EF92E0 /* NotchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F592500B2B600EF92E0 /* NotchView.swift */; };
+		3D617F5E2500B33900EF92E0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F5D2500B33900EF92E0 /* UIViewController+Extension.swift */; };
+		3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F5F2500B3C300EF92E0 /* NotchViewController.swift */; };
+		3D617F622500B42300EF92E0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F612500B42300EF92E0 /* ContainerViewController.swift */; };
+		3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F632500B45700EF92E0 /* SheetViewController.swift */; };
 		3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
@@ -58,6 +65,13 @@
 		3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterRMainViewController.swift; sourceTree = "<group>"; };
 		3D617F4C24FFC21700EF92E0 /* TheaterRMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterRMainViewController.xib; sourceTree = "<group>"; };
 		3D617F5124FFC46100EF92E0 /* TopTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTapViewController.swift; sourceTree = "<group>"; };
+		3D617F552500B22100EF92E0 /* BottomSheetUsingFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetUsingFrames.swift; sourceTree = "<group>"; };
+		3D617F572500B28600EF92E0 /* BottomSheetLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetLauncher.swift; sourceTree = "<group>"; };
+		3D617F592500B2B600EF92E0 /* NotchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchView.swift; sourceTree = "<group>"; };
+		3D617F5D2500B33900EF92E0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3D617F5F2500B3C300EF92E0 /* NotchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchViewController.swift; sourceTree = "<group>"; };
+		3D617F612500B42300EF92E0 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		3D617F632500B45700EF92E0 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +159,44 @@
 				3D617F5124FFC46100EF92E0 /* TopTapViewController.swift */,
 			);
 			path = TheaterReservation;
+			sourceTree = "<group>";
+		};
+		3D617F532500B1EC00EF92E0 /* SheetView */ = {
+			isa = PBXGroup;
+			children = (
+				3D617F5C2500B31000EF92E0 /* Extensions */,
+				3D617F5B2500B30500EF92E0 /* controller */,
+				3D617F542500B1FD00EF92E0 /* View */,
+			);
+			path = SheetView;
+			sourceTree = "<group>";
+		};
+		3D617F542500B1FD00EF92E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D617F552500B22100EF92E0 /* BottomSheetUsingFrames.swift */,
+				3D617F572500B28600EF92E0 /* BottomSheetLauncher.swift */,
+				3D617F592500B2B600EF92E0 /* NotchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D617F5B2500B30500EF92E0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D617F5F2500B3C300EF92E0 /* NotchViewController.swift */,
+				3D617F612500B42300EF92E0 /* ContainerViewController.swift */,
+				3D617F632500B45700EF92E0 /* SheetViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		3D617F5C2500B31000EF92E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D617F5D2500B33900EF92E0 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3D71E50C24FAC5C70061B556 /* LogInMenu */ = {
@@ -254,6 +306,7 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				3D617F532500B1EC00EF92E0 /* SheetView */,
 				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				BD9BF17022F9C318009E47EB /* Splash */,
@@ -394,16 +447,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D617F5E2500B33900EF92E0 /* UIViewController+Extension.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
+				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */,
+				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
+				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				3D617F5A2500B2B600EF92E0 /* NotchView.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
@@ -411,6 +469,8 @@
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				3D617F562500B22100EF92E0 /* BottomSheetUsingFrames.swift in Sources */,
+				3D617F622500B42300EF92E0 /* ContainerViewController.swift in Sources */,
 				3D617F5224FFC46100EF92E0 /* TopTapViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */,
