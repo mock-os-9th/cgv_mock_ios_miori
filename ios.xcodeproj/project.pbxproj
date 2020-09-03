@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AA250172F700925D10 /* ResultResponse.swift */; };
+		3D3169AD2501735900925D10 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AC2501735900925D10 /* SignUpDataManager.swift */; };
 		3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */; };
 		3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */; };
 		3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59192024FAF72C005CEAB6 /* SlideRight.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3169AA250172F700925D10 /* ResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
+		3D3169AC2501735900925D10 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
 		3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		3D59192024FAF72C005CEAB6 /* SlideRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRight.swift; sourceTree = "<group>"; };
@@ -125,6 +129,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3D3169A82501729400925D10 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3D3169AC2501735900925D10 /* SignUpDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3D3169A9250172A500925D10 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3D3169AA250172F700925D10 /* ResultResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		3D59191B24FAD6AB005CEAB6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +168,8 @@
 		3D5CB1F324FE179400A12CF7 /* CJONE1 */ = {
 			isa = PBXGroup;
 			children = (
+				3D3169A9250172A500925D10 /* Entity */,
+				3D3169A82501729400925D10 /* DataManager */,
 				3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */,
 				3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */,
 			);
@@ -465,6 +487,7 @@
 				3D617F5E2500B33900EF92E0 /* UIViewController+Extension.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				3D3169AD2501735900925D10 /* SignUpDataManager.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
@@ -491,6 +514,7 @@
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
+				3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
 			);
@@ -633,14 +657,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69F5355JYF;
-				INFOPLIST_FILE = ios/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ios;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,14 +677,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69F5355JYF;
-				INFOPLIST_FILE = ios/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ios;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
