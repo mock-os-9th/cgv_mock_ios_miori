@@ -8,8 +8,12 @@
 
 import UIKit
 
-class CJ1ViewController: UIViewController {
+class CJ1ViewController: BaseViewController {
     
+    @IBAction func pressGetSignUpResult(_ sender: UIButton) {
+        SignUpDataManager().getTutorials(self)
+    }
+
     
     override func viewWillLayoutSubviews() {
         
