@@ -13,12 +13,12 @@ import AlamofireObjectMapper
 class SignInDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    func getLogin(_ linputViewController: LInputViewController) {
+    func getLogin(_ userinfo : LoginModel, _ linputViewController: LInputViewController ) {
         //let uid = "miori12345"
         //let upw = "abcde12345!"
         let parameter: [String:Any] = [
-            "id" : "miori11111",
-            "pw" : "abcde12345!"
+            "id" : userinfo.uid,
+            "pw" : userinfo.upw
         ]
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
@@ -35,6 +35,7 @@ class SignInDataManager {
                         print("code:100 완벽한 성공띠")
                         print(resultResponse.result.jwt!)
                         //mainViewController.titleLabel.text = resultResponse.message
+                        //LogInMenuViewController().profileInfo.setTitle(LInputViewController().uidTextField.text!, for: .normal)
                     } else {
                         print(resultResponse.code!)
                         //mainViewController.titleLabel.text = "튜토리얼 정보를 불러오는데 실패하였습니다."

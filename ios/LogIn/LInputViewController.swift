@@ -10,10 +10,17 @@ import UIKit
 
 class LInputViewController: UIViewController {
     
+    @IBOutlet weak var uidTextField: UITextField!
+    @IBOutlet weak var upwTextField: UITextField!
+    
+    
     @IBAction func pressGetSignUpResult(_ sender: UIButton) {
-        SignInDataManager().getLogin(self)
+        let uid = uidTextField.text!
+        let upw = upwTextField.text!
+        let userInfo = LoginModel(id: uid, pw: upw)
+        SignInDataManager().getLogin(userInfo, self)
     }
-
+    
     override func viewWillLayoutSubviews() {
         let width = self.view.frame.width
         
@@ -33,6 +40,7 @@ class LInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // Do any additional setup if required.
     }
     
@@ -48,7 +56,7 @@ class LInputViewController: UIViewController {
         self.present(cj1View, animated: false, completion: nil)
         //self.navigationController?.pushViewController(cj1View, animated: true)
     }
-   
+    
 }
 
 
