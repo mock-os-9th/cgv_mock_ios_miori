@@ -11,6 +11,13 @@ import UIKit
 // 1. picker view protocol 을 채택할게
 class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    
+    /*
+     Picker view tag
+     - 0 : big City
+     - 1 : small City
+     */
+    
     // 하나의 PickerView 안에 몇 개의 선택 가능한 리스트 표시가능한지
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -19,7 +26,8 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     //PickerView에 표시될 항목의 개수를 반환하는 메서드
     //여기서는 우리가 보여주기로 결정한 fruits 리스트의 길이를 반환
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView == bigCtiyPicker {
+        //if pickerView == bigCtiyPicker {
+        if pickerView.tag == 0 {
         return bigCity.count
         } else {
             return smallCity.count
@@ -29,7 +37,8 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     //PickerView 내에서 특정한 위치(row)를 가리키게 될 때, 그 위치에 해당하는 문자열을 반환하는 메서드
     //여기서는 fruits의 row 번째 문자열을 반환
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == bigCtiyPicker {
+        //if pickerView == bigCtiyPicker {
+        if pickerView.tag == 0 {
         return bigCity[row]
         } else {
             return smallCity[row]
@@ -37,7 +46,8 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == bigCtiyPicker {
+        //if pickerView == bigCtiyPicker {
+        if pickerView.tag == 0 {
         print(bigCity[row])
         } else {
             print(smallCity[row])
@@ -60,6 +70,10 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
         
         smallCityPicker.dataSource = self
         smallCityPicker.delegate = self
+        
+        //picker 간 tag 지정
+        bigCtiyPicker.tag = 0
+        smallCityPicker.tag = 1
         
         
         
