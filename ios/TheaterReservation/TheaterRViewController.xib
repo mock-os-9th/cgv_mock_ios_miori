@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TheaterRViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="bigCtiyPicker" destination="XSv-R5-1uW" id="hKe-5G-9hG"/>
+                <outlet property="smallCityPicker" destination="quo-7i-vkH" id="KZb-aM-RCF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,6 +47,9 @@
                                 </pickerView>
                                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quo-7i-vkH" userLabel="regionDetail">
                                     <rect key="frame" x="124" y="0.0" width="290" height="530"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="aYg-oR-ate" id="c8j-B6-mfW"/>
+                                    </connections>
                                 </pickerView>
                             </subviews>
                             <constraints>

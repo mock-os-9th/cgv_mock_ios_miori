@@ -19,23 +19,38 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     //PickerView에 표시될 항목의 개수를 반환하는 메서드
     //여기서는 우리가 보여주기로 결정한 fruits 리스트의 길이를 반환
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView == bigCtiyPicker {
         return bigCity.count
+        } else {
+            return smallCity.count
+        }
     }
     
     //PickerView 내에서 특정한 위치(row)를 가리키게 될 때, 그 위치에 해당하는 문자열을 반환하는 메서드
     //여기서는 fruits의 row 번째 문자열을 반환
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == bigCtiyPicker {
         return bigCity[row]
+        } else {
+            return smallCity[row]
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == bigCtiyPicker {
         print(bigCity[row])
+        } else {
+            print(smallCity[row])
+        }
     }
-
+    
     var bigCity = ["서울","경기","인천","강원","대전/충청","대구"]
+    var smallCity = ["강남","강변","건대입구","구로","대학로","동대문","등촌","명동"]
+    
     @IBOutlet weak var bigCtiyPicker: UIPickerView!
+    @IBOutlet weak var smallCityPicker: UIPickerView!
     //    private var viewControllers = [ UIViewController(),UIViewController()]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,76 +58,11 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
         bigCtiyPicker.dataSource = self
         bigCtiyPicker.delegate = self
         
+        smallCityPicker.dataSource = self
+        smallCityPicker.delegate = self
         
-//        self.dataSource = self
-//
-//        // Create bar
-//        let bar = TMBar.ButtonBar()
-//        bar.layout.transitionStyle = .snap
-//        // bar blur 처리 안하게 하기 위해 clear 선언
-//        bar.backgroundView.style = .clear
-//        // 배경색
-//        bar.backgroundColor = .systemPink
-//
-//
-//
-//        // Customize button color
-//        bar.buttons.customize { (button) in
-//            //글자색이랑 눌렀을때 바뀌는 색
-//            button.tintColor = .white
-//            button.selectedTintColor = .white
-//        }
-//        //인디케이터 색
-//        bar.indicator.tintColor = .white
-//
-//        addBar(bar, dataSource: self, at: .top)
         
-
-        // Do any additional setup after loading the view.
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
-//extension TheaterRViewController: PageboyViewControllerDataSource, TMBarDataSource {
-//    //뷰컨트롤러 만큼 반환해줄거야
-//    func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-//        return viewControllers.count
-//    }
-//
-//    func viewController(for pageboyViewController: PageboyViewController,
-//                        at index: PageboyViewController.PageIndex) -> UIViewController? {
-//        return viewControllers[index]
-//    }
-//
-//    func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-//        return nil
-//    }
-//
-//    func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-//        //        let title = "Page \(index)"
-//        //        return TMBarItem(title: title)
-//        //여기는 탭바에 보일 단어들
-//
-//        switch index {
-//        case 0:
-//            print("0")
-//            return TMBarItem(title: "  지역별")
-//        case 1:
-//            return TMBarItem(title: "특별관")
-//
-//        default:
-//            let title = "Page \(index)"
-//            return TMBarItem(title: title)
-//        }
-//    }
-//}
+
