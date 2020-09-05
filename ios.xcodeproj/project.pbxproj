@@ -215,6 +215,7 @@
 		3D617F542500B1FD00EF92E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D617F662500C05F00EF92E0 /* ContainerViewController.xib */,
 				3D617F552500B22100EF92E0 /* BottomSheetUsingFrames.swift */,
 				3D617F572500B28600EF92E0 /* BottomSheetLauncher.swift */,
 				3D617F592500B2B600EF92E0 /* NotchView.swift */,
@@ -228,7 +229,6 @@
 				3D617F5F2500B3C300EF92E0 /* NotchViewController.swift */,
 				3D617F632500B45700EF92E0 /* SheetViewController.swift */,
 				3D617F652500C05F00EF92E0 /* ContainerViewController.swift */,
-				3D617F662500C05F00EF92E0 /* ContainerViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
