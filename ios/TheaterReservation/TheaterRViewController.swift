@@ -28,9 +28,9 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         //if pickerView == bigCtiyPicker {
         if pickerView.tag == 0 {
-        return bigCity.count
+            return bigCity.count
         } else {
-            return smallCity.count
+            return smallSeoul.count
         }
     }
     
@@ -39,23 +39,26 @@ class TheaterRViewController: BaseViewController, UIPickerViewDataSource, UIPick
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         //if pickerView == bigCtiyPicker {
         if pickerView.tag == 0 {
-        return bigCity[row]
+            //print(row)
+            return bigCity[row]
         } else {
-            return smallCity[row]
+            //print(row)
+            return smallSeoul[row]
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //if pickerView == bigCtiyPicker {
         if pickerView.tag == 0 {
-        print(bigCity[row])
+            print(bigCity[row])
         } else {
-            print(smallCity[row])
+            print(smallSeoul[row])
         }
     }
     
     var bigCity = ["서울","경기","인천","강원","대전/충청","대구"]
-    var smallCity = ["강남","강변","건대입구","구로","대학로","동대문","등촌","명동"]
+    var smallSeoul = ["강남","강변","건대입구","구로","대학로","동대문","등촌","명동"]
+    var smallGyeonggi = ["경기광주","고양행신","광교","광교상현","구리","김포운양","김포풍무"]
     
     @IBOutlet weak var bigCtiyPicker: UIPickerView!
     @IBOutlet weak var smallCityPicker: UIPickerView!
