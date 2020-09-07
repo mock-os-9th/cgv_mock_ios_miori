@@ -13,21 +13,23 @@ import AlamofireObjectMapper
 class SignUpDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    func getTutorials(_ cj1ViewController: CJ1ViewController) {
+    func getSignUp(_ userinfo : SignUpModel,_ cj1ViewController: CJ1ViewController) {
         //let uid = "miori12345"
         //let upw = "abcde12345!"
         let parameter: [String:Any] = [
-            "id" : "miori11111",
-            "pw" : "abcde12345!",
-            "name" : "이제야되는구나마지막체크",
-            "phone" : "01011111111",
-            "email" : "abcd1234@naver.com",
-            "gender" : "여",
-            "age" : 24,
-            "phoneAgree" : true,
-            "idenAgree" : true,
-            "telAgree" : true,
-            "indiAgree" : true
+
+            "id" : userinfo.uid,
+            "pw" : userinfo.upw,
+            "name" : userinfo.name,
+            "phone" : userinfo.phone,
+            "authNum" : userinfo.authNum,
+            "email" : userinfo.email,
+            "gender" : userinfo.gender,
+            "age" : userinfo.age,
+            "phoneAgree" : userinfo.phoneAgree,
+            "idenAgree" : userinfo.idenAgree,
+            "telAgree" : userinfo.telAgree,
+            "indiAgree" : userinfo.indiAgree
         ]
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
