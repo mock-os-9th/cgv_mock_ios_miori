@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //FirebaseApp.configure()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let splashViewController = SplashViewController()
+        //let splashViewController = SplashViewController()
         
         //loot view 변경
         
