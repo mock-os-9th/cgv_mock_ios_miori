@@ -19,9 +19,13 @@ class LInputViewController: UIViewController {
         let upw = upwTextField.text!
         let userInfo = LoginModel(id: uid, pw: upw)
         SignInDataManager().getLogin(userInfo, self)
+        self.dismiss(animated: false, completion: nil)
     }
     
-    override func viewWillLayoutSubviews() {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         let width = self.view.frame.width
         
         
@@ -32,16 +36,43 @@ class LInputViewController: UIViewController {
         //let navigationItem = UINavigationItem(title: "Navigation bar")
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< 로그인", style: .plain, target: self, action: #selector(backAction))
+        //navigationBar.tintColor = .black
+        
+        
+        //틴트는 검정색
+        navigationItem.leftBarButtonItem?.tintColor = .black
+        //배경은 흰색
+        navigationBar.barTintColor = .white
+        //라인 지우기
+        navigationBar.shadowImage = UIImage()
+        
+        
         
         navigationBar.setItems([navigationItem], animated: false)
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
         
         // Do any additional setup if required.
+        // textfield border 아래
+        let border = CALayer()
+        let twidth = CGFloat(1.0)
+        border.borderColor = UIColor.darkGray.cgColor
+        border.frame = CGRect(x: 0, y: uidTextField.frame.size.height - twidth, width:  uidTextField.frame.size.width, height: uidTextField.frame.size.height)
+        
+        border.borderWidth = twidth
+        uidTextField.layer.addSublayer(border)
+        uidTextField.layer.masksToBounds = true
+        
+        // textfield border 아래
+        let border2 = CALayer()
+        let twidth2 = CGFloat(1.0)
+        border2.borderColor = UIColor.darkGray.cgColor
+        border2.frame = CGRect(x: 0, y: upwTextField.frame.size.height - twidth2, width:  upwTextField.frame.size.width, height: upwTextField.frame.size.height)
+        
+        border2.borderWidth = twidth2
+        upwTextField.layer.addSublayer(border2)
+        upwTextField.layer.masksToBounds = true
+        
+        
     }
     
     @objc func backAction(){
