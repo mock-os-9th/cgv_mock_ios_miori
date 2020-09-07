@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     //bottom sheet 기본 호출
     let bottomLauncher = BottomSheetLauncher()
     let bottomLauncherUsingFrames = BottomSheetUsingFrames()
-    let sheetVc = SheetViewController()
+    let sheetVc = SheetViewControllerHome()
     
     @IBOutlet weak var mainScrollView: UIScrollView!
     
@@ -87,7 +87,7 @@ class HomeViewController: UIViewController {
         self.present(logInModal, animated: true, completion: nil)
      }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { //바꾸기
         super.viewDidAppear(false)
         
         mainScrollView.translatesAutoresizingMaskIntoConstraints = false
