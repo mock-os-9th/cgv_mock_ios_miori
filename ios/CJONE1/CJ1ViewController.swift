@@ -17,9 +17,14 @@ class CJ1ViewController: BaseViewController {
     // 성별 버튼 터치 이벤트
     @IBAction func manDidTap(_ sender: UIButton) {
         gender = "남"
+        //print(gender!)
+        sender.layer.borderColor = UIColor.systemPink.cgColor
+        sender.titleLabel?.textColor = .systemPink
     }
     @IBAction func womanDidTap(_ sender: UIButton) {
         gender = "여"
+        sender.layer.borderColor = UIColor.systemPink.cgColor
+        sender.titleLabel?.textColor = .systemPink
     }
     @IBOutlet weak var userBirth: UITextField!
     // 사용자 아이디
@@ -39,28 +44,36 @@ class CJ1ViewController: BaseViewController {
     @IBAction func sendNumAuth(_ sender: UIButton) {
         let phoneNum = userPhone.text!
         let phoneAuth = AuthModel(phoneNum: phoneNum, phoneAgree: true, idenAgree: true, telAgree: true, indiAgree: true)
+        //print("code는 \(SendPhoneAuthDataManager().getAuth(phoneAuth, self))")
         SendPhoneAuthDataManager().getAuth(phoneAuth, self)
-        
-        
     }
     @IBOutlet weak var numAuth: UITextField!
     
+    // 전화번호 인증확인
     @IBAction func numAuthCheck(_ sender: UIButton) {
+        let phoneNum = userPhone.text!
+        let authNum = numAuth.text!
+        let authCheck = PhoneAuth(phoneNum: phoneNum, authNum: authNum)
+        PhoneAuthDataManager().getCheck(authCheck, self)
     }
     
     //회원가입 눌렀을때
     @IBAction func pressGetSignUpResult(_ sender: UIButton) {
         let uname = userName.text!
-        let uage = userBirth.text!
+        let uage = Int(userBirth.text!) ?? 0
         let uid = userId.text!
         let upw = userPw.text!
         let uemail = userEmail.text!
         let uphone = userPhone.text!
+        let authNum = numAuth.text!
         let phoneAgree = true
         let idenAgree = true
         let telAgree = true
         let indiAgree = true
-        
+        print(gender!)
+        print(uage)
+        let userInfo = SignUpModel(id: uid, pw: upw, name: uname, phone: uphone, authNum: authNum, email: uemail, gender: gender!, age: uage, phoneAgree: phoneAgree, idenAgree: idenAgree, telAgree: telAgree, indiAgree: indiAgree)
+        SignUpDataManager().getSignUp(userInfo, self)
         
         
         

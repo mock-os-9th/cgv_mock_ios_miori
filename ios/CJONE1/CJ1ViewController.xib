@@ -174,10 +174,6 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="userID:" destination="-1" eventType="editingDidEnd" id="zmo-Di-aW4"/>
-                                                        <action selector="userId:" destination="-1" eventType="editingDidEnd" id="u3k-og-6KY"/>
-                                                    </connections>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fo-9l-eG6">
                                                     <rect key="frame" x="315" y="1153" width="59" height="40"/>

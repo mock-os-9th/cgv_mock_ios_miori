@@ -19,6 +19,8 @@
 		3D5B15AA2506289D0072C8D2 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15A92506289D0072C8D2 /* SignUpModel.swift */; };
 		3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15AB250677B40072C8D2 /* SendPhoneAuthDataManager.swift */; };
 		3D5B15AE250678250072C8D2 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15AD250678250072C8D2 /* AuthModel.swift */; };
+		3D5B15B025068CE80072C8D2 /* PhoneAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15AF25068CE80072C8D2 /* PhoneAuth.swift */; };
+		3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */; };
 		3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */; };
 		3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */; };
 		3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */; };
@@ -77,6 +79,8 @@
 		3D5B15A92506289D0072C8D2 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		3D5B15AB250677B40072C8D2 /* SendPhoneAuthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPhoneAuthDataManager.swift; sourceTree = "<group>"; };
 		3D5B15AD250678250072C8D2 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		3D5B15AF25068CE80072C8D2 /* PhoneAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuth.swift; sourceTree = "<group>"; };
+		3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthDataManager.swift; sourceTree = "<group>"; };
 		3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LInputViewController.swift; sourceTree = "<group>"; };
 		3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LInputViewController.xib; sourceTree = "<group>"; };
 		3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJ1ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			children = (
 				3D3169AC2501735900925D10 /* SignUpDataManager.swift */,
 				3D5B15AB250677B40072C8D2 /* SendPhoneAuthDataManager.swift */,
+				3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				3D5B15A92506289D0072C8D2 /* SignUpModel.swift */,
 				3D5B15AD250678250072C8D2 /* AuthModel.swift */,
+				3D5B15AF25068CE80072C8D2 /* PhoneAuth.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */,
 				3D617F672500C05F00EF92E0 /* ContainerViewController.swift in Sources */,
 				3D5B15AE250678250072C8D2 /* AuthModel.swift in Sources */,
 				3D617F562500B22100EF92E0 /* BottomSheetUsingFrames.swift in Sources */,
@@ -568,6 +575,7 @@
 				3D5B15AA2506289D0072C8D2 /* SignUpModel.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */,
+				3D5B15B025068CE80072C8D2 /* PhoneAuth.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */,
 				3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */,
