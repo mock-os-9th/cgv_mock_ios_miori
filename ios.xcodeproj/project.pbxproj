@@ -21,6 +21,8 @@
 		3D5B15AE250678250072C8D2 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15AD250678250072C8D2 /* AuthModel.swift */; };
 		3D5B15B025068CE80072C8D2 /* PhoneAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15AF25068CE80072C8D2 /* PhoneAuth.swift */; };
 		3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */; };
+		3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */; };
+		3D5B15BB25075E760072C8D2 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */; };
 		3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */; };
 		3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */; };
 		3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */; };
@@ -81,6 +83,8 @@
 		3D5B15AD250678250072C8D2 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		3D5B15AF25068CE80072C8D2 /* PhoneAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuth.swift; sourceTree = "<group>"; };
 		3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthDataManager.swift; sourceTree = "<group>"; };
+		3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LInputViewController.swift; sourceTree = "<group>"; };
 		3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LInputViewController.xib; sourceTree = "<group>"; };
 		3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJ1ViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +199,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3D5B15B3250749A60072C8D2 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */,
+				3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		3D5CB1EA24FDFF2C00A12CF7 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		3D617F4624FFBEB900EF92E0 /* TheaterReservation */ = {
 			isa = PBXGroup;
 			children = (
+				3D5B15B3250749A60072C8D2 /* CollectionViewCell */,
 				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
 				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
 				3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */,
@@ -487,6 +501,7 @@
 				3D5B15A72505E90A0072C8D2 /* ContainerHomeViewController.xib in Resources */,
 				3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
+				3D5B15BB25075E760072C8D2 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +580,7 @@
 				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
+				3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */,

@@ -11,17 +11,36 @@ import UIKit
 
 
 
-class TheaterRMainViewController: UIViewController {
+class TheaterRMainViewController: BaseViewController {
     
+
     //bottom sheet 기본 호출
     let bottomLauncher = BottomSheetLauncher()
     let bottomLauncherUsingFrames = BottomSheetUsingFrames()
     let sheetVc = SheetViewController()
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    // cell 등록을 위한 선언
+    let collecionCell = "moviePosterCell"
+    
+    // cell 이미지
+    private var moviePoster: [UIImage] {
+        var moviePoster:[UIImage] = []
+        for i in 0...50 {
+            let index = i % 16
+            let image = UIImage(named: "check")!
+            print(image)
+            
+            moviePoster.append(image)
+        }
+        return moviePoster
+    }
+    
+    //collection view 등록
+    @IBOutlet weak var moviePosterCV: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         //Dispatch Queue를 이용해 bottom sheet 1초 후에 띄우기
         let seconds = 1.0
@@ -38,21 +57,29 @@ class TheaterRMainViewController: UIViewController {
                 self.sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             ])
         }
-
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "MovieCollectionViewCell")
+        
     }
     
     
+}
+
+extension TheaterRMainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as? MovieCollectionViewCell else {
+            return MovieCollectionViewCell()
+        }
     
+        cell.moviePoster.image = moviePoster[indexPath.row]
+        return cell
+    }
 }
 
 
