@@ -14,16 +14,19 @@ class LogInMenuViewController: UIViewController {
 //    
 //    //영화별 예매, 극장별 예매, 패스트오더, 포퇴켓 버튼 이벤트
 
-    @IBOutlet weak var movieR: UIStackView!
+
+    @IBOutlet weak var reserMovie: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // x버튼 누르면 닫히게 하는 함수
     @IBAction func didTapClose(_ sender: UIButton) {
         self.dismiss(animated: false, completion: nil)
     }
     
+    // 로그인 화면 띄어주는 함수
     @IBAction func pressLogin(_ sender: UIButton) {
         let loginput = LInputViewController()
         //        //full screen으로
@@ -50,7 +53,7 @@ class LogInMenuViewController: UIViewController {
         let singleTapGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(movieRTap))
         //한번 누르게 할거야
         singleTapGesture.numberOfTouchesRequired = 1
-        self.movieR.addGestureRecognizer(singleTapGesture)
+        self.reserMovie.addGestureRecognizer(singleTapGesture)
     }
     
     @objc func movieRTap() {
