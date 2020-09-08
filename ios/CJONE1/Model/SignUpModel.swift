@@ -19,7 +19,7 @@ class SignUpModel{
     private var _authNum : String!
     private var _email : String!
     private var _gender : String!
-    private var _age : Int!
+    private var _age : Int
     private var _phoneAgree : Bool
     private var _idenAgree : Bool
     private var _telAgree : Bool
