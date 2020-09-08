@@ -23,6 +23,9 @@
 		3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */; };
 		3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */; };
 		3D5B15BB25075E760072C8D2 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */; };
+		3D5B15BE25076CDD0072C8D2 /* MoviePosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15BD25076CDD0072C8D2 /* MoviePosterModel.swift */; };
+		3D5B15C125076D190072C8D2 /* MoviePosterResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15C025076D190072C8D2 /* MoviePosterResultResponse.swift */; };
+		3D5B15C425076F450072C8D2 /* GetPosterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B15C325076F450072C8D2 /* GetPosterDataManager.swift */; };
 		3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */; };
 		3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */; };
 		3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */; };
@@ -85,6 +88,9 @@
 		3D5B15B125068D4F0072C8D2 /* PhoneAuthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthDataManager.swift; sourceTree = "<group>"; };
 		3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D5B15BD25076CDD0072C8D2 /* MoviePosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterModel.swift; sourceTree = "<group>"; };
+		3D5B15C025076D190072C8D2 /* MoviePosterResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterResultResponse.swift; sourceTree = "<group>"; };
+		3D5B15C325076F450072C8D2 /* GetPosterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPosterDataManager.swift; sourceTree = "<group>"; };
 		3D5CB1EF24FE0FE000A12CF7 /* LInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LInputViewController.swift; sourceTree = "<group>"; };
 		3D5CB1F024FE0FE000A12CF7 /* LInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LInputViewController.xib; sourceTree = "<group>"; };
 		3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJ1ViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +214,30 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		3D5B15BC25076CC20072C8D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B15BD25076CDD0072C8D2 /* MoviePosterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D5B15BF25076D070072C8D2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B15C025076D190072C8D2 /* MoviePosterResultResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D5B15C225076F200072C8D2 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B15C325076F450072C8D2 /* GetPosterDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		3D5CB1EA24FDFF2C00A12CF7 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +265,9 @@
 		3D617F4624FFBEB900EF92E0 /* TheaterReservation */ = {
 			isa = PBXGroup;
 			children = (
+				3D5B15C225076F200072C8D2 /* DataManager */,
+				3D5B15BF25076D070072C8D2 /* Entity */,
+				3D5B15BC25076CC20072C8D2 /* Model */,
 				3D5B15B3250749A60072C8D2 /* CollectionViewCell */,
 				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
 				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
@@ -569,6 +602,7 @@
 				3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */,
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
+				3D5B15C125076D190072C8D2 /* MoviePosterResultResponse.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */,
 				3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */,
@@ -576,6 +610,7 @@
 				3D617F6B250120C200EF92E0 /* SignInDataManager.swift in Sources */,
 				3D617F5A2500B2B600EF92E0 /* NotchView.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
+				3D5B15C425076F450072C8D2 /* GetPosterDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
@@ -583,6 +618,7 @@
 				3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				3D5B15BE25076CDD0072C8D2 /* MoviePosterModel.swift in Sources */,
 				3D5B15B225068D4F0072C8D2 /* PhoneAuthDataManager.swift in Sources */,
 				3D617F672500C05F00EF92E0 /* ContainerViewController.swift in Sources */,
 				3D5B15AE250678250072C8D2 /* AuthModel.swift in Sources */,
