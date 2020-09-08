@@ -14,14 +14,7 @@ class GetPosterDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func getPosterImage(_ theaterRMainViewController: TheaterRMainViewController) {
-        //let uid = "miori12345"
-        //let upw = "abcde12345!"
-        //get 은 param 필요 없어
-//        let parameter: [String:Any] = [
-//
-//            "image" : movieInfo.image,
-//
-//        ]
+
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
             
@@ -32,22 +25,25 @@ class GetPosterDataManager {
             .responseObject(completionHandler: { (response: DataResponse<MoviePosterResultResponse>) in
                 switch response.result {
                 case .success(let resultResponse):
-                    //print("dd: \(resultResponse)")
                     if resultResponse.code == 100 {
                         print(resultResponse.code!)
-                        print("dd : \(resultResponse)")
-                        //theaterRMainViewController.moviePoster.append(resultResponse.result!.moviePoster)
-                        //print(theaterRMainViewController.moviePoster)
-                        //mainViewController.titleLabel.text = resultResponse.message
+                        //result 부분에서 이미지만 받아와
+                        for i in resultResponse.result{
+                            //print("dd : \(i.image!)")
+                            // 이미지링크 (string) 받아와서 배열에 저장
+                            theaterRMainViewController.moviePoster.append(i.image!)
+                            //moviePoster.movieImage.append(i.image!)
+                        }
+                        print("dm : \(theaterRMainViewController.moviePoster)")
+
                     } else {
-                        print(resultResponse.code)
-                        //mainViewController.titleLabel.text = "튜토리얼 정보를 불러오는데 실패하였습니다."
+                        print(resultResponse.code!)
                     }
                 case .failure:
                     print("서버와의 연결이 원할하지 않습니다")
-                    //mainViewController.titleLabel.text = "서버와의 연결이 원활하지 않습니다."
                 }
             })
+        
     }
 }
 
