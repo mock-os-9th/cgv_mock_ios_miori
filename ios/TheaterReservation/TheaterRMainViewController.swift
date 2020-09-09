@@ -14,14 +14,12 @@ import UIKit
 class TheaterRMainViewController: BaseViewController {
     
     
-    //bottom sheet 기본 호출
-    let bottomLauncher = BottomSheetLauncher()
-    let bottomLauncherUsingFrames = BottomSheetUsingFrames()
-    let sheetVc = SheetViewController()
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var timeseatcollecionView: UICollectionView!
     // cell 등록을 위한 선언
     let collecionCell = "moviePosterCell"
+    let collecionCell2 = "TimeSeatCollectionViewCell"
     
     // cell 이미지
     var moviePoster : [String] = ["https://ssl.pstatic.net/imgmovie/mdi/mit110/1900/190010_P02_162156.jpg",
@@ -45,27 +43,28 @@ class TheaterRMainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //TimeSeatCollectionViewCell
         
-        //Dispatch Queue를 이용해 bottom sheet 1초 후에 띄우기
-        let seconds = 1.0
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            // Put your code which should be executed with a delay here
-            //print("hello")
-            self.sheetVc.view.translatesAutoresizingMaskIntoConstraints = false
-            self.view.addSubview(self.sheetVc.view)
-            
-            NSLayoutConstraint.activate([
-                self.sheetVc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-                self.sheetVc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                self.sheetVc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-                self.sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            ])
-        }
         
+        //포스터 콜렉션 뷰
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "MovieCollectionViewCell")
         
+        // 콜렉션뷰 투명하게
+        collectionView.backgroundView = nil;
+        collectionView.backgroundColor = .clear
+        
+        //영화시간, 좌석 콜렉션부
+        timeseatcollecionView.delegate = self
+        timeseatcollecionView.dataSource = self
+        timeseatcollecionView.register(UINib(nibName: "TimeSeatCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "TimeSeatCollectionViewCell")
+        
+        
+        
+        // collection view tag 지정
+        collectionView.tag = 0
+        timeseatcollecionView.tag = 1
         
         //GetPosterDataManager().getPosterImage(self)
         
@@ -89,19 +88,53 @@ class TheaterRMainViewController: BaseViewController {
 extension TheaterRMainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return moviePoster.count
+        if collectionView.tag == 0 {
+            return moviePoster.count
+        } else {
+            return 10
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as? MovieCollectionViewCell else {
-            return MovieCollectionViewCell()
+        if collectionView.tag == 0 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as? MovieCollectionViewCell else {
+                return MovieCollectionViewCell()
+            }
+            
+            if let posterUrl = NSURL(string: moviePoster[indexPath.row]),
+                let converImage = NSData(contentsOf: posterUrl as URL) {
+                cell.moviePoster.image = UIImage(data: converImage as Data)
+            }
+            
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TimeSeatCollectionViewCell", for: indexPath) as? TimeSeatCollectionViewCell else {
+                return TimeSeatCollectionViewCell()
+            }
+            //cell.moviePoster.i
+            
+            return cell
         }
-        
-        if let posterUrl = NSURL(string: moviePoster[indexPath.row]),
-            let converImage = NSData(contentsOf: posterUrl as URL) {
-            cell.moviePoster.image = UIImage(data: converImage as Data)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 1 {
+            //print("cell \(indexPath.row) clicked")
+            //bottom sheet 기본 호출
+            let bottomLauncher = BottomSheetLauncher()
+            let bottomLauncherUsingFrames = BottomSheetUsingFrames()
+            let sheetVc = SheetViewController()
+            
+            sheetVc.view.translatesAutoresizingMaskIntoConstraints = false
+            self.view.addSubview(sheetVc.view)
+            
+            NSLayoutConstraint.activate([
+                sheetVc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+                sheetVc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                sheetVc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            ])
         }
-        return cell
     }
 }
 

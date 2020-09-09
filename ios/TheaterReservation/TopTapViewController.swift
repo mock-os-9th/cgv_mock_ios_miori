@@ -38,6 +38,7 @@ class TopTapViewController: TabmanViewController {
         //인디케이터 색
         bar.indicator.tintColor = .white
         
+        
         addBar(bar, dataSource: self, at: .top)
     }
     
@@ -67,7 +68,6 @@ extension TopTapViewController: PageboyViewControllerDataSource, TMBarDataSource
         
         switch index {
         case 0:
-            print("0")
             return TMBarItem(title: "  영화별예매")
         case 1:
             return TMBarItem(title: "극장별예매")
