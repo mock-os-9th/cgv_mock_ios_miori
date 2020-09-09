@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */; };
+		3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */; };
+		3D262C762508B554009A5288 /* ReserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D262C742508B554009A5288 /* ReserViewController.xib */; };
+		3D262C782508B925009A5288 /* SheetViewReserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D262C772508B925009A5288 /* SheetViewReserController.swift */; };
+		3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D262C792508BF76009A5288 /* ReserViewController.swift */; };
 		3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AA250172F700925D10 /* ResultResponse.swift */; };
 		3D3169AD2501735900925D10 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AC2501735900925D10 /* SignUpDataManager.swift */; };
 		3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BC24325025F9D00252FD7 /* LoginModel.swift */; };
@@ -73,6 +78,11 @@
 
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeatCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSeatCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D262C742508B554009A5288 /* ReserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReserViewController.xib; sourceTree = "<group>"; };
+		3D262C772508B925009A5288 /* SheetViewReserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewReserController.swift; sourceTree = "<group>"; };
+		3D262C792508BF76009A5288 /* ReserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserViewController.swift; sourceTree = "<group>"; };
 		3D3169AA250172F700925D10 /* ResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
 		3D3169AC2501735900925D10 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
 		3D4BC24325025F9D00252FD7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -212,6 +222,8 @@
 			children = (
 				3D5B15B825075E760072C8D2 /* MovieCollectionViewCell.swift */,
 				3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */,
+				3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */,
+				3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -249,6 +261,22 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		3D5B15CA2507C09D0072C8D2 /* TabSegmnetView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabSegmnetView;
+			sourceTree = "<group>";
+		};
+		3D5B15CB2507C0D90072C8D2 /* BottomPop */ = {
+			isa = PBXGroup;
+			children = (
+				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
+				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
+			);
+			path = BottomPop;
+			sourceTree = "<group>";
+		};
 		3D5CB1EA24FDFF2C00A12CF7 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,15 +304,15 @@
 		3D617F4624FFBEB900EF92E0 /* TheaterReservation */ = {
 			isa = PBXGroup;
 			children = (
+				3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */,
+				3D617F4C24FFC21700EF92E0 /* TheaterRMainViewController.xib */,
+				3D5B15CB2507C0D90072C8D2 /* BottomPop */,
+				3D5B15CA2507C09D0072C8D2 /* TabSegmnetView */,
 				3D5B15C52507A1250072C8D2 /* TabBar */,
 				3D5B15C225076F200072C8D2 /* DataManager */,
 				3D5B15BF25076D070072C8D2 /* Entity */,
 				3D5B15BC25076CC20072C8D2 /* Model */,
 				3D5B15B3250749A60072C8D2 /* CollectionViewCell */,
-				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
-				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
-				3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */,
-				3D617F4C24FFC21700EF92E0 /* TheaterRMainViewController.xib */,
 			);
 			path = TheaterReservation;
 			sourceTree = "<group>";
@@ -304,6 +332,7 @@
 			children = (
 				3D5B15A52505E90A0072C8D2 /* ContainerHomeViewController.xib */,
 				3D617F662500C05F00EF92E0 /* ContainerViewController.xib */,
+				3D262C742508B554009A5288 /* ReserViewController.xib */,
 				3D617F552500B22100EF92E0 /* BottomSheetUsingFrames.swift */,
 				3D617F572500B28600EF92E0 /* BottomSheetLauncher.swift */,
 				3D617F592500B2B600EF92E0 /* NotchView.swift */,
@@ -319,6 +348,8 @@
 				3D617F652500C05F00EF92E0 /* ContainerViewController.swift */,
 				3D5B15A22505E8DE0072C8D2 /* SheetViewControllerHome.swift */,
 				3D5B15A42505E90A0072C8D2 /* ContainerHomeViewController.swift */,
+				3D262C772508B925009A5288 /* SheetViewReserController.swift */,
+				3D262C792508BF76009A5288 /* ReserViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -534,8 +565,10 @@
 			files = (
 				3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */,
 				3D617F682500C05F00EF92E0 /* ContainerViewController.xib in Resources */,
 				3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */,
+				3D262C762508B554009A5288 /* ReserViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */,
 				3D5B15C92507A9B00072C8D2 /* TopTapViewController.xib in Resources */,
@@ -610,11 +643,13 @@
 				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
+				3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */,
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
 				3D5B15C125076D190072C8D2 /* MoviePosterResultResponse.swift in Sources */,
+				3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */,
 				3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */,
@@ -628,6 +663,7 @@
 				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
+				3D262C782508B925009A5288 /* SheetViewReserController.swift in Sources */,
 				3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
