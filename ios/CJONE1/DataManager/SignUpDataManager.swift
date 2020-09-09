@@ -46,7 +46,7 @@ class SignUpDataManager {
                         print("code:100 완벽한 성공띠")
                         //mainViewController.titleLabel.text = resultResponse.message
                     } else {
-                        print(resultResponse.code)
+                        print(resultResponse.code!)
                         //mainViewController.titleLabel.text = "튜토리얼 정보를 불러오는데 실패하였습니다."
                     }
                 case .failure:

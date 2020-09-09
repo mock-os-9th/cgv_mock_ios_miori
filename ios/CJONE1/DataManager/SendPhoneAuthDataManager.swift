@@ -57,7 +57,7 @@ class SendPhoneAuthDataManager {
                                 //navigationViewController.pushViewController(MainViewController(), animated: true)
                             }
                         cj1ViewController.presentAlertWithAction(title: "ERROR", message: "에러발생", customAction)
-                        print(resultResponse.code)
+                        print(resultResponse.code!)
                         
                         //mainViewController.titleLabel.text = "튜토리얼 정보를 불러오는데 실패하였습니다."
                     }
