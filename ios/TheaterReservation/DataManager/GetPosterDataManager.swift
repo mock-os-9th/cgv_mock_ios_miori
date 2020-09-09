@@ -14,7 +14,7 @@ class GetPosterDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func getPosterImage(_ theaterRMainViewController: TheaterRMainViewController) {
-
+       
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
             
@@ -28,13 +28,19 @@ class GetPosterDataManager {
                     if resultResponse.code == 100 {
                         print(resultResponse.code!)
                         //result 부분에서 이미지만 받아와
+                        
                         for i in resultResponse.result{
                             //print("dd : \(i.image!)")
                             // 이미지링크 (string) 받아와서 배열에 저장
+                            // 아래는 vc에서 moviePoster가 단순 배열 이었을 때
                             theaterRMainViewController.moviePoster.append(i.image!)
                             //moviePoster.movieImage.append(i.image!)
+                            
+                            //posterModel.append(MoviePosterModel(imageURL: i.image!))
+                           
                         }
                         print("dm : \(theaterRMainViewController.moviePoster)")
+                        //print("dm : \(posterModel)")
 
                     } else {
                         print(resultResponse.code!)
