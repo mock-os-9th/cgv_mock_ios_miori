@@ -128,20 +128,7 @@ extension TheaterRMainViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 1 {
             //print("cell \(indexPath.row) clicked")
-            //bottom sheet 기본 호출
-            let bottomLauncher = BottomSheetLauncher()
-            let bottomLauncherUsingFrames = BottomSheetUsingFrames()
-            let sheetVc = SheetViewReserController()
-            
-            sheetVc.view.translatesAutoresizingMaskIntoConstraints = false
-            self.view.addSubview(sheetVc.view)
-            
-            NSLayoutConstraint.activate([
-                sheetVc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-                sheetVc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                sheetVc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-                sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            ])
+            self.present(ReserViewController(), animated: true, completion: nil)
         }
     }
 }

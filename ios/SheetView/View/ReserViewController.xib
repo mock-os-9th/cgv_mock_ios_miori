@@ -74,21 +74,6 @@
                         <constraint firstAttribute="width" constant="200" id="lZ0-WE-oQz"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-Gu-gpg">
-                    <rect key="frame" x="139" y="792" width="275" height="70"/>
-                    <color key="backgroundColor" red="0.87005221840000002" green="0.3818430901" blue="0.27836856250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="70" id="JrO-ph-Gog"/>
-                        <constraint firstAttribute="width" constant="275" id="v4O-tH-y2S"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                    <state key="normal" title="인원선택">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="didSelect:" destination="-1" eventType="touchUpInside" id="jOI-OI-Sdu"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  * 사회적 거리두기 격상으로 인해 강화된 &quot;좌석 띄워앉기&quot;와 &quot;출입 명부 작성&quot;을 운영하고 있습니다." lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4C-1o-B6z">
                     <rect key="frame" x="20" y="551" width="374" height="33"/>
                     <constraints>
@@ -143,6 +128,24 @@
                     <state key="normal" title="공유">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="didShare:" destination="-1" eventType="touchUpInside" id="bES-Gg-1nB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-Gu-gpg">
+                    <rect key="frame" x="139" y="792" width="275" height="70"/>
+                    <color key="backgroundColor" red="0.87005221840000002" green="0.3818430901" blue="0.27836856250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="JrO-ph-Gog"/>
+                        <constraint firstAttribute="width" constant="275" id="v4O-tH-y2S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="인원선택">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didSelect:" destination="-1" eventType="touchUpInside" id="g0W-SS-zjJ"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

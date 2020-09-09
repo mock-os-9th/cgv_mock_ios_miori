@@ -15,9 +15,13 @@ class ReserViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
  
-    @IBAction func didSelect(_ sender: UIButton) {
-        print("tap")
+    @IBAction func didShare(_ sender: Any) {
+        print("share")
     }
+    @IBAction func didSelect(_ sender: UIButton) {
+        print("hello")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.isHidden = true
