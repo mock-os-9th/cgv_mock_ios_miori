@@ -16,9 +16,11 @@ class LogInMenuViewController: UIViewController {
 
 
     @IBOutlet weak var reserMovie: UIStackView!
+    @IBOutlet weak var nameBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GetUserNameDataManager().getPosterImage(self)
     }
     
     // x버튼 누르면 닫히게 하는 함수
@@ -29,21 +31,15 @@ class LogInMenuViewController: UIViewController {
     // 로그인 화면 띄어주는 함수
     @IBAction func pressLogin(_ sender: UIButton) {
         let loginput = LInputViewController()
-        //        //full screen으로
-        //
+        //full screen으로
         loginput.modalPresentationStyle = .fullScreen
-        //
-        //        self.present(loginput, animated: false, completion: nil)
+        // self.present(loginput, animated: false, completion: nil)
         // currentVC => FirstViewController
         guard let pvc = self.presentingViewController else { return }
         
         self.dismiss(animated: false) {
             pvc.present(loginput, animated: true, completion: nil)
-
         }
-        
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,10 +54,19 @@ class LogInMenuViewController: UIViewController {
     
     @objc func movieRTap() {
         print("영화별예매눌림")
+        
+        //let loginput = LInputViewController()
         let theaherR = TopTapViewController()
         //full screen으로
         theaherR.modalPresentationStyle = .fullScreen
-        self.present(theaherR, animated: false, completion: nil)
+        // self.present(loginput, animated: false, completion: nil)
+        // currentVC => FirstViewController
+        guard let pvc = self.presentingViewController else { return }
+        
+        self.dismiss(animated: false) {
+            pvc.present(theaherR, animated: true, completion: nil)
+        }
+    
     }
     
 }

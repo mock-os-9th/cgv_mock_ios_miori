@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInMenuViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="nameBtn" destination="EEA-Lv-fQQ" id="Eil-Rx-Acs"/>
                 <outlet property="reserMovie" destination="0t3-oJ-Mj4" id="9lx-SO-E5J"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
