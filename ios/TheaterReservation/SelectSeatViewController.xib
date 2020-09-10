@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectSeatViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="SelectSeatViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-wp-fUf" userLabel="Select Seat">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-S5-osJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RL3-Te-EXa" userLabel="Container">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="900" id="GGW-oN-SUp"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="RL3-Te-EXa" firstAttribute="width" secondItem="yl3-yg-Z6L" secondAttribute="width" id="7m9-9J-wvQ"/>
+                                <constraint firstItem="RL3-Te-EXa" firstAttribute="bottom" secondItem="rPd-Dr-Cbb" secondAttribute="bottom" id="VsS-sx-aYf"/>
+                                <constraint firstItem="RL3-Te-EXa" firstAttribute="trailing" secondItem="rPd-Dr-Cbb" secondAttribute="trailing" id="iy9-aF-jBy"/>
+                                <constraint firstItem="RL3-Te-EXa" firstAttribute="top" secondItem="rPd-Dr-Cbb" secondAttribute="top" id="w1j-VL-pdM"/>
+                                <constraint firstItem="RL3-Te-EXa" firstAttribute="leading" secondItem="rPd-Dr-Cbb" secondAttribute="leading" id="xTZ-ze-HAa"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="rPd-Dr-Cbb"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="yl3-yg-Z6L"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QXo-S5-osJ" secondAttribute="bottom" id="0iS-KS-Jom"/>
+                        <constraint firstItem="QXo-S5-osJ" firstAttribute="leading" secondItem="BFE-wp-fUf" secondAttribute="leading" id="XCH-rB-zlB"/>
+                        <constraint firstAttribute="trailing" secondItem="QXo-S5-osJ" secondAttribute="trailing" id="dPU-Nd-5jV"/>
+                        <constraint firstItem="QXo-S5-osJ" firstAttribute="top" secondItem="BFE-wp-fUf" secondAttribute="top" id="qZ0-T7-2v5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piC-9y-VfP" userLabel="priceView">
+                    <rect key="frame" x="0.0" y="647" width="414" height="145"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="pGI-2Y-wtG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-u7-si6">
+                    <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="fxh-LY-KbA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="다음">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="piC-9y-VfP" firstAttribute="top" secondItem="BFE-wp-fUf" secondAttribute="bottom" id="4vA-Oj-b0U"/>
+                <constraint firstItem="BFE-wp-fUf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Cr-Gb-nIf"/>
+                <constraint firstItem="ynd-u7-si6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GGV-5X-WOJ"/>
+                <constraint firstItem="BFE-wp-fUf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JOM-1n-Xn5"/>
+                <constraint firstItem="ynd-u7-si6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Min-zN-CYp"/>
+                <constraint firstItem="ynd-u7-si6" firstAttribute="top" secondItem="piC-9y-VfP" secondAttribute="bottom" id="ODG-qm-9sq"/>
+                <constraint firstItem="ynd-u7-si6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="TpC-du-8be"/>
+                <constraint firstItem="piC-9y-VfP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V3b-g1-H1j"/>
+                <constraint firstItem="BFE-wp-fUf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aBy-Q3-nbd"/>
+                <constraint firstItem="piC-9y-VfP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kdO-RF-JTU"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>
