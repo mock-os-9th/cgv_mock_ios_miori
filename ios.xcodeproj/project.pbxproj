@@ -14,6 +14,9 @@
 		3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D262C792508BF76009A5288 /* ReserViewController.swift */; };
 		3D2D39FA250A3DCC00B1B6D4 /* GetUserNameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D39F9250A3DCC00B1B6D4 /* GetUserNameDataManager.swift */; };
 		3D2D39FF250A3F8900B1B6D4 /* GetNameResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D39FE250A3F8900B1B6D4 /* GetNameResultResponse.swift */; };
+		3D2D3A04250A58AE00B1B6D4 /* KakaopayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D3A02250A58AE00B1B6D4 /* KakaopayViewController.swift */; };
+		3D2D3A05250A58AE00B1B6D4 /* KakaopayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D3A03250A58AE00B1B6D4 /* KakaopayViewController.xib */; };
+		3D2D3A07250A5B9600B1B6D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2D3A06250A5B9600B1B6D4 /* WebKit.framework */; };
 		3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AA250172F700925D10 /* ResultResponse.swift */; };
 		3D3169AD2501735900925D10 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AC2501735900925D10 /* SignUpDataManager.swift */; };
 		3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BC24325025F9D00252FD7 /* LoginModel.swift */; };
@@ -89,6 +92,9 @@
 		3D262C792508BF76009A5288 /* ReserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserViewController.swift; sourceTree = "<group>"; };
 		3D2D39F9250A3DCC00B1B6D4 /* GetUserNameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserNameDataManager.swift; sourceTree = "<group>"; };
 		3D2D39FE250A3F8900B1B6D4 /* GetNameResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNameResultResponse.swift; sourceTree = "<group>"; };
+		3D2D3A02250A58AE00B1B6D4 /* KakaopayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaopayViewController.swift; sourceTree = "<group>"; };
+		3D2D3A03250A58AE00B1B6D4 /* KakaopayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaopayViewController.xib; sourceTree = "<group>"; };
+		3D2D3A06250A5B9600B1B6D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3D3169AA250172F700925D10 /* ResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
 		3D3169AC2501735900925D10 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
 		3D4BC24325025F9D00252FD7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2D3A07250A5B9600B1B6D4 /* WebKit.framework in Frameworks */,
 				C7B0F461A33E2BA70527A7F9 /* Pods_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,23 @@
 				3D2D39FE250A3F8900B1B6D4 /* GetNameResultResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D2D3A00250A588700B1B6D4 /* KakaoPay */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D3A01250A589300B1B6D4 /* View */,
+			);
+			path = KakaoPay;
+			sourceTree = "<group>";
+		};
+		3D2D3A01250A589300B1B6D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D3A02250A58AE00B1B6D4 /* KakaopayViewController.swift */,
+				3D2D3A03250A58AE00B1B6D4 /* KakaopayViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3D3169A82501729400925D10 /* DataManager */ = {
@@ -418,6 +442,7 @@
 		596D99A16687EBAF37438401 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D2D3A06250A5B9600B1B6D4 /* WebKit.framework */,
 				2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */,
 			);
 			name = Frameworks;
@@ -513,6 +538,7 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				3D617F532500B1EC00EF92E0 /* SheetView */,
 				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
@@ -595,6 +621,7 @@
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */,
 				3D617F682500C05F00EF92E0 /* ContainerViewController.xib in Resources */,
+				3D2D3A05250A58AE00B1B6D4 /* KakaopayViewController.xib in Resources */,
 				3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */,
 				3D262C762508B554009A5288 /* ReserViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
@@ -681,6 +708,7 @@
 				3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */,
+				3D2D3A04250A58AE00B1B6D4 /* KakaopayViewController.swift in Sources */,
 				3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */,
 				3D2D39FF250A3F8900B1B6D4 /* GetNameResultResponse.swift in Sources */,
 				3D5B15A62505E90A0072C8D2 /* ContainerHomeViewController.swift in Sources */,

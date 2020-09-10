@@ -21,7 +21,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-wp-fUf" userLabel="Select Seat">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-S5-osJ">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-S5-osJ">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RL3-Te-EXa" userLabel="Container">
@@ -1355,9 +1355,9 @@
                                     <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="QL7-BF-c9Q" secondAttribute="trailing" constant="230" id="4Mx-Sa-uu7"/>
+                                        <constraint firstAttribute="width" constant="700" id="4pL-sc-nYL"/>
                                         <constraint firstItem="cTh-U7-Ri8" firstAttribute="top" secondItem="QL7-BF-c9Q" secondAttribute="bottom" constant="70" id="Cqq-ss-2mN"/>
-                                        <constraint firstAttribute="height" constant="900" id="GGW-oN-SUp"/>
-                                        <constraint firstAttribute="width" constant="700" id="Nqd-rY-XQg"/>
+                                        <constraint firstAttribute="height" constant="900" id="KNB-dt-A6Z"/>
                                         <constraint firstItem="QL7-BF-c9Q" firstAttribute="leading" secondItem="RL3-Te-EXa" secondAttribute="leading" constant="230" id="Uqx-yB-igN"/>
                                         <constraint firstItem="cTh-U7-Ri8" firstAttribute="centerX" secondItem="RL3-Te-EXa" secondAttribute="centerX" id="pOP-bS-3EQ"/>
                                         <constraint firstItem="QL7-BF-c9Q" firstAttribute="top" secondItem="RL3-Te-EXa" secondAttribute="top" constant="60" id="ygO-ZN-4HM"/>
@@ -1399,6 +1399,9 @@
                     <state key="normal" title="다음">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="tapToPay:" destination="-1" eventType="touchUpInside" id="taN-71-Z8f"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

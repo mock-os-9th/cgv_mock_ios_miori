@@ -18,7 +18,12 @@ class SelectSeatViewController: BaseViewController {
      
     }
     
-
+    @IBAction func tapToPay(_ sender: UIButton) {
+        let payVC = UINavigationController(rootViewController: KakaopayViewController(nibName: "KakaopayViewController", bundle: nil))
+        payVC.modalPresentationStyle = .fullScreen
+        self.present(payVC, animated: false, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         
