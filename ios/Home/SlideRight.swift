@@ -16,6 +16,17 @@ class SlideRight: NSObject, UIViewControllerAnimatedTransitioning {
     
     // 남아있는 검정뷰
     let dismissView = UIView()
+    // viewMap: View 객체
+    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewMapTapped))
+    
+
+    @objc func viewMapTapped(sender: UITapGestureRecognizer) {
+        // gesture 코드
+        print("hello")
+    }
+
+
+
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 1.0
@@ -42,13 +53,16 @@ class SlideRight: NSObject, UIViewControllerAnimatedTransitioning {
             
             // dismissview 추가
             containerView.addSubview(dismissView)
+            //gesture 추가
+           
+      
             
-            
-            dismissView.frame = containerView.bounds
-        
-            
-            dismissView.frame.size.width = UIScreen.main.bounds.width * 0.1
-            dismissView.frame.size.height = UIScreen.main.bounds.height
+            dismissView.frame = CGRect(x: 0, y: 44, width: UIScreen.main.bounds.width * 0.1, height: UIScreen.main.bounds.height)
+//            dismissView.frame = containerView.bounds
+//
+//
+//            dismissView.frame.size.width = UIScreen.main.bounds.width * 0.1
+//            dismissView.frame.size.height = UIScreen.main.bounds.height
             
   
             toViewController.view.frame = CGRect(x: toViewController.view.bounds.width, y: 0, width: finalWidth, height: finalHeight)
@@ -60,6 +74,7 @@ class SlideRight: NSObject, UIViewControllerAnimatedTransitioning {
             // dismissView 뿌옇게
             self.dismissView.alpha = 0.5
             toViewController.view.transform = CGAffineTransform(translationX: -finalWidth, y: 0)
+            self.dismissView.addGestureRecognizer(self.tapGestureRecognizer)
         }
         
         // dismiss 했을 때 애니메이션
