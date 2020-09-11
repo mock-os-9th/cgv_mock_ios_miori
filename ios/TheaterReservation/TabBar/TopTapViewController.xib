@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopTapViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xBtn" destination="3iN-pY-xwx" id="zgQ-8w-rfq"/>
                 <outlet property="xView" destination="ZtU-JI-1Fs" id="y0j-Hp-BeT"/>
             </connections>
         </placeholder>
@@ -19,35 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtU-JI-1Fs">
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZtU-JI-1Fs" userLabel="xView">
                     <rect key="frame" x="348" y="44" width="40" height="40"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iN-pY-xwx">
-                            <rect key="frame" x="5" y="5" width="30" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iN-pY-xwx">
+                            <rect key="frame" x="5" y="2" width="30" height="36"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                             <state key="normal" title="X">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="didTap:" destination="-1" eventType="touchUpInside" id="QaG-8u-ySE"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="3iN-pY-xwx" firstAttribute="centerX" secondItem="ZtU-JI-1Fs" secondAttribute="centerX" id="3xm-wt-hOU"/>
-                        <constraint firstItem="3iN-pY-xwx" firstAttribute="top" secondItem="ZtU-JI-1Fs" secondAttribute="top" constant="5" id="92Z-b5-JIe"/>
-                        <constraint firstItem="3iN-pY-xwx" firstAttribute="leading" secondItem="ZtU-JI-1Fs" secondAttribute="leading" constant="5" id="Gq3-gW-y0J"/>
-                        <constraint firstAttribute="width" constant="40" id="WC8-ui-Ql8"/>
-                        <constraint firstItem="3iN-pY-xwx" firstAttribute="centerY" secondItem="ZtU-JI-1Fs" secondAttribute="centerY" id="XoH-eP-hRG"/>
-                        <constraint firstAttribute="bottom" secondItem="3iN-pY-xwx" secondAttribute="bottom" constant="5" id="Zfx-Xd-6XC"/>
-                        <constraint firstAttribute="height" constant="40" id="gpR-6g-foj"/>
-                        <constraint firstAttribute="trailing" secondItem="3iN-pY-xwx" secondAttribute="trailing" constant="5" id="yqR-xo-poh"/>
+                        <constraint firstItem="3iN-pY-xwx" firstAttribute="centerY" secondItem="ZtU-JI-1Fs" secondAttribute="centerY" id="3zg-vU-LAX"/>
+                        <constraint firstItem="3iN-pY-xwx" firstAttribute="centerX" secondItem="ZtU-JI-1Fs" secondAttribute="centerX" id="IP2-Oy-6QI"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZtU-JI-1Fs" secondAttribute="trailing" constant="26" id="9JU-Uy-7j8"/>
-                <constraint firstItem="ZtU-JI-1Fs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nEu-Fr-Law"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="105.79710144927537" y="108.48214285714285"/>
         </view>

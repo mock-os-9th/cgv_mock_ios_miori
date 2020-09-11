@@ -12,6 +12,17 @@ import Pageboy
 
 class TopTapViewController: TabmanViewController {
     
+    
+    //bottom sheet 기본 호출
+    let bottomLauncher = BottomSheetLauncher()
+    let bottomLauncherUsingFrames = BottomSheetUsingFrames()
+    let sheetVc = SheetViewController()
+    
+    @IBOutlet weak var xBtn: UIButton!
+    @IBAction func didTap(_ sender: UIButton) {
+        //print("hello")
+        self.dismiss(animated: false, completion: nil)
+    }
     @IBOutlet weak var xView: UIView!
     
     private var viewControllers = [TheaterRMainViewController(), UIViewController(),UIViewController()]
@@ -28,11 +39,11 @@ class TopTapViewController: TabmanViewController {
         // bar blur 처리 안하게 하기 위해 clear 선언
         bar.backgroundView.style = .clear
         // 배경색
-        bar.backgroundColor = .systemPink
+        bar.backgroundColor = UIColor(hex: 0xe04448, alpha: 1)
         
-    
         
-        // Customize button color
+        
+        // Customize button colorr
         bar.buttons.customize { (button) in
             //글자색이랑 눌렀을때 바뀌는 색
             button.tintColor = .white
@@ -42,11 +53,46 @@ class TopTapViewController: TabmanViewController {
         bar.indicator.tintColor = .white
         
         bar.addSubview(xView)
+        bar.addSubview(xBtn)
+        let constraints = [
+            //xView.centerXAnchor.constraint(equalTo: bar.centerXAnchor),
+            xBtn.centerYAnchor.constraint(equalTo: bar.centerYAnchor),
+            xBtn.rightAnchor.constraint(equalTo: bar.rightAnchor, constant: -20)
+            // xView.widthAnchor.constraint(equalToConstant: 100),
+            //xView.heightAnchor.constraint(equalTo: view.widthAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
         
-   
+        
+        view.bringSubviewToFront(xBtn)
+        
         
         addBar(bar, dataSource: self, at: .top)
+        
+        //Dispatch Queue를 이용해 bottom sheet 1초 후에 띄우기
+        let seconds = 1.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            // Put your code which should be executed with a delay here
+            //print("hello")
+            self.sheetVc.view.translatesAutoresizingMaskIntoConstraints = false
+            self.view.addSubview(self.sheetVc.view)
+            
+            NSLayoutConstraint.activate([
+                self.sheetVc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+                self.sheetVc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                self.sheetVc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                self.sheetVc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            ])
+        }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+        
+        
+    }
+    
+    
     
     
     
