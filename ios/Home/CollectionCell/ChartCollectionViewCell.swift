@@ -12,8 +12,8 @@ class ChartCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var movieName: UILabel!
-    @IBOutlet weak var percent1: UILabel!
     @IBOutlet weak var nowBtn: UIButton!
+    @IBOutlet weak var reserPercent: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

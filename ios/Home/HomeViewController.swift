@@ -22,7 +22,15 @@ class HomeViewController: BaseViewController {
     // 콜렉션 뷰 이미지 배열
     var topImageArr : [String] = ["top1","top2","top3","top4"]
     
+    //미드 콜렉션뷰 배열들
+    var midImageArr : [String] = [String]()
+    var midMovieName : [String] = [String]()
+    var midPercent : [String] = [String]()
+    
     //    @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var reserChartLabel: UILabel!
+    // 세그먼트 컨트롤
+    @IBOutlet weak var segmnetCtrl: UISegmentedControl!
     
     let logInDrawer = LogInMenuViewController(nibName: "LogInViewController", bundle: nil)
     let transition = SlideRight()
@@ -100,6 +108,9 @@ class HomeViewController: BaseViewController {
         topCollectionView.tag = 0
         midCollectionView.tag = 1
         
+        // 데이터메니저 연결
+        HomeDataManager().getMovieInfo(self)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -138,6 +149,29 @@ class HomeViewController: BaseViewController {
         //        mainScrollView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
         //            .isActive = true // ---- 4
         //
+     
+        
+        // 라벨 언더라인
+        let labelString = "#예매차트"
+        //let textColor: UIColor = .blue
+        let underLineColor: UIColor = .systemPink
+        let underLineStyle = NSUnderlineStyle.single.rawValue + 5
+
+        let labelAtributes:[NSAttributedString.Key : Any]  = [
+            //NSAttributedStringKey.foregroundColor: textColor,
+            NSAttributedString.Key.underlineStyle: underLineStyle,
+            NSAttributedString.Key.underlineColor: underLineColor
+        ]
+
+        let underlineAttributedString = NSAttributedString(string: labelString,
+                                                           attributes: labelAtributes)
+
+        reserChartLabel.attributedText = underlineAttributedString
+        
+        //segment 글자 크기
+        let font: [AnyHashable : Any] = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]
+        segmnetCtrl.setTitleTextAttributes(font as! [NSAttributedString.Key : Any], for: .normal)
+
     }
     
     /*
@@ -170,7 +204,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         if collectionView.tag == 0 {
             return topImageArr.count
         } else {
-            return 10
+            return midImageArr.count
         }
     }
     
@@ -182,14 +216,31 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             cell.imageCell.image = UIImage(named: topImageArr[indexPath.row])
             return cell
         } else {
+            //ndexPath.row = 0
+            //print(indexPath.row)
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChartCollectionViewCell", for: indexPath) as? ChartCollectionViewCell else {
                 return ChartCollectionViewCell()
             }
-            //cell.imageCell.image = UIImage(named: topImageArr[indexPath.row])
+            
+            // 이미지 등록이 안되어있으면 nonPoster이미지 보여줘
+            if  midImageArr[indexPath.row] == "none" {
+                //print("ok")
+                cell.posterImage.image = UIImage(named: "nonePoster")
+            }
+                // url string -> image
+            else if let posterUrl = NSURL(string: midImageArr[indexPath.row]),
+                let converImage = NSData(contentsOf: posterUrl as URL) {
+                cell.posterImage.image = UIImage(data: converImage as Data)
+            }
+            
+            cell.movieName.text = midMovieName[indexPath.row]
+            cell.reserPercent.text = midPercent[indexPath.row]
+            
+
             return cell
         }
     }
-        
-        
-        
+    
+    
+    
 }

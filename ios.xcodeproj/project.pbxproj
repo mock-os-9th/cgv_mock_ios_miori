@@ -61,6 +61,8 @@
 		3D66336A250B46DA004634CC /* ChartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D663368250B46DA004634CC /* ChartCollectionViewCell.xib */; };
 		3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
+		3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D852D10250B5063003A98EB /* HomeResultResponse.swift */; };
+		3D852D13250B50FF003A98EB /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D852D12250B50FF003A98EB /* HomeDataManager.swift */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
 		3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFED1425095A9100944295 /* SelectSeatViewController.xib */; };
 		3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2288D2501818100A7847F /* LoginResultResponse.swift */; };
@@ -143,6 +145,8 @@
 		3D663368250B46DA004634CC /* ChartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
+		3D852D10250B5063003A98EB /* HomeResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResultResponse.swift; sourceTree = "<group>"; };
+		3D852D12250B50FF003A98EB /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
 		3DDFED1425095A9100944295 /* SelectSeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatViewController.xib; sourceTree = "<group>"; };
 		3DF2288D2501818100A7847F /* LoginResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultResponse.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 		3D59191B24FAD6AB005CEAB6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D852D0F250B5041003A98EB /* Entity */,
+				3D852D0E250B5029003A98EB /* DataManager */,
 				3D663360250B3BB7004634CC /* CollectionCell */,
 				3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */,
 				3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */,
@@ -449,6 +455,22 @@
 				3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */,
 			);
 			path = LogInMenu;
+			sourceTree = "<group>";
+		};
+		3D852D0E250B5029003A98EB /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3D852D12250B50FF003A98EB /* HomeDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3D852D0F250B5041003A98EB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3D852D10250B5063003A98EB /* HomeResultResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		3DF2288C250180E900A7847F /* Entity */ = {
@@ -720,6 +742,7 @@
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
 				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
+				3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
@@ -764,6 +787,7 @@
 				3D663363250B3BFB004634CC /* TopImageCollectionViewCell.swift in Sources */,
 				3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
+				3D852D13250B50FF003A98EB /* HomeDataManager.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

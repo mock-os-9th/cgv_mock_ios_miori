@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="midCollectionView" destination="N47-O3-EFJ" id="kTP-uR-fO4"/>
+                <outlet property="reserChartLabel" destination="RfO-xy-PpG" id="pgf-y7-4YP"/>
+                <outlet property="segmnetCtrl" destination="gQn-Dw-k7Y" id="hVb-bO-tNe"/>
                 <outlet property="topCollectionView" destination="DiM-sM-dIa" id="mz0-QS-se1"/>
                 <outlet property="view" destination="BaV-LN-BPB" id="QOp-WK-wnz"/>
             </connections>
@@ -314,7 +316,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGm-bJ-erd" userLabel="TopTab">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnN-EG-1kH" userLabel="Tab Detail Scroll">
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnN-EG-1kH" userLabel="Tab Detail Scroll">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zBg-2g-uQI">
@@ -418,10 +420,10 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                         </collectionView>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gQn-Dw-k7Y">
-                                            <rect key="frame" x="0.0" y="171" width="414" height="71"/>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gQn-Dw-k7Y">
+                                            <rect key="frame" x="0.0" y="171" width="414" height="61"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="70" id="ftP-Is-IbQ"/>
+                                                <constraint firstAttribute="height" constant="60" id="ftP-Is-IbQ"/>
                                             </constraints>
                                             <segments>
                                                 <segment title="무비차트"/>
@@ -430,10 +432,10 @@
                                             </segments>
                                         </segmentedControl>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-0M-Q5Z">
-                                            <rect key="frame" x="0.0" y="241" width="414" height="486"/>
+                                            <rect key="frame" x="0.0" y="231" width="414" height="486"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="N47-O3-EFJ">
-                                                    <rect key="frame" x="0.0" y="90" width="414" height="396"/>
+                                                    <rect key="frame" x="0.0" y="50" width="414" height="436"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GeG-84-h98">
                                                         <size key="itemSize" width="130" height="370"/>
@@ -442,14 +444,58 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                 </collectionView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w94-Kb-TBM">
+                                                    <rect key="frame" x="10" y="15" width="320" height="45"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#예매차트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-xy-PpG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="63.5" height="45"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#현재상영작" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-pc-1Ql">
+                                                            <rect key="frame" x="73.5" y="0.0" width="88" height="45"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#특별관" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCn-UU-1Ls">
+                                                            <rect key="frame" x="171.5" y="0.0" width="57" height="45"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오직CGV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vS-bX-wfp">
+                                                            <rect key="frame" x="238.5" y="0.0" width="81.5" height="45"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="320" id="Tq4-yu-Emd"/>
+                                                        <constraint firstAttribute="height" constant="45" id="ZPE-iL-Svm"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1r-LH-ROR">
+                                                    <rect key="frame" x="350" y="21.5" width="56" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="더보기 &gt;">
+                                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
+                                                <constraint firstItem="N47-O3-EFJ" firstAttribute="top" secondItem="w94-Kb-TBM" secondAttribute="bottom" constant="-10" id="0IV-Do-taA"/>
                                                 <constraint firstItem="N47-O3-EFJ" firstAttribute="leading" secondItem="lVf-0M-Q5Z" secondAttribute="leading" id="3qI-nh-Mbc"/>
-                                                <constraint firstItem="N47-O3-EFJ" firstAttribute="top" secondItem="lVf-0M-Q5Z" secondAttribute="top" constant="90" id="AHP-e4-ObL"/>
+                                                <constraint firstItem="w94-Kb-TBM" firstAttribute="leading" secondItem="lVf-0M-Q5Z" secondAttribute="leading" constant="10" id="8fz-dX-nmW"/>
                                                 <constraint firstAttribute="trailing" secondItem="N47-O3-EFJ" secondAttribute="trailing" id="E6c-ZV-ygj"/>
                                                 <constraint firstAttribute="bottom" secondItem="N47-O3-EFJ" secondAttribute="bottom" id="Xjl-9T-PTP"/>
+                                                <constraint firstItem="K1r-LH-ROR" firstAttribute="centerY" secondItem="w94-Kb-TBM" secondAttribute="centerY" id="YiS-C1-o9a"/>
+                                                <constraint firstItem="w94-Kb-TBM" firstAttribute="top" secondItem="lVf-0M-Q5Z" secondAttribute="top" constant="15" id="Ylb-TL-jp3"/>
                                                 <constraint firstAttribute="height" constant="486" id="fDw-BH-CZA"/>
+                                                <constraint firstAttribute="trailing" secondItem="K1r-LH-ROR" secondAttribute="trailing" constant="8" id="hTI-fd-cUd"/>
                                             </constraints>
                                         </view>
                                     </subviews>
