@@ -55,6 +55,10 @@
 		3D617F672500C05F00EF92E0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F652500C05F00EF92E0 /* ContainerViewController.swift */; };
 		3D617F682500C05F00EF92E0 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D617F662500C05F00EF92E0 /* ContainerViewController.xib */; };
 		3D617F6B250120C200EF92E0 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F6A250120C200EF92E0 /* SignInDataManager.swift */; };
+		3D663363250B3BFB004634CC /* TopImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D663361250B3BFB004634CC /* TopImageCollectionViewCell.swift */; };
+		3D663364250B3BFB004634CC /* TopImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D663362250B3BFB004634CC /* TopImageCollectionViewCell.xib */; };
+		3D663369250B46DA004634CC /* ChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D663367250B46DA004634CC /* ChartCollectionViewCell.swift */; };
+		3D66336A250B46DA004634CC /* ChartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D663368250B46DA004634CC /* ChartCollectionViewCell.xib */; };
 		3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */; };
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
@@ -133,6 +137,10 @@
 		3D617F652500C05F00EF92E0 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		3D617F662500C05F00EF92E0 /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
 		3D617F6A250120C200EF92E0 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
+		3D663361250B3BFB004634CC /* TopImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D663362250B3BFB004634CC /* TopImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D663367250B46DA004634CC /* ChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D663368250B46DA004634CC /* ChartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInMenuViewController.swift; sourceTree = "<group>"; };
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +256,7 @@
 		3D59191B24FAD6AB005CEAB6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D663360250B3BB7004634CC /* CollectionCell */,
 				3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */,
 				3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */,
 				3D59192024FAF72C005CEAB6 /* SlideRight.swift */,
@@ -418,6 +427,17 @@
 				3D617F6A250120C200EF92E0 /* SignInDataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3D663360250B3BB7004634CC /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D663361250B3BFB004634CC /* TopImageCollectionViewCell.swift */,
+				3D663362250B3BFB004634CC /* TopImageCollectionViewCell.xib */,
+				3D663367250B46DA004634CC /* ChartCollectionViewCell.swift */,
+				3D663368250B46DA004634CC /* ChartCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		3D71E50C24FAC5C70061B556 /* LogInMenu */ = {
@@ -633,9 +653,11 @@
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				3D617F4A24FFBEE200EF92E0 /* TheaterRViewController.xib in Resources */,
 				3D5B15A72505E90A0072C8D2 /* ContainerHomeViewController.xib in Resources */,
+				3D663364250B3BFB004634CC /* TopImageCollectionViewCell.xib in Resources */,
 				3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				3D5B15BB25075E760072C8D2 /* MovieCollectionViewCell.xib in Resources */,
+				3D66336A250B46DA004634CC /* ChartCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +741,7 @@
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				3D5B15C425076F450072C8D2 /* GetPosterDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
+				3D663369250B46DA004634CC /* ChartCollectionViewCell.swift in Sources */,
 				3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
@@ -738,6 +761,7 @@
 				3D5B15B025068CE80072C8D2 /* PhoneAuth.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */,
+				3D663363250B3BFB004634CC /* TopImageCollectionViewCell.swift in Sources */,
 				3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
