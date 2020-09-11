@@ -65,6 +65,10 @@
 		3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */; };
 		3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D852D10250B5063003A98EB /* HomeResultResponse.swift */; };
 		3D852D13250B50FF003A98EB /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D852D12250B50FF003A98EB /* HomeDataManager.swift */; };
+		3DABA594250B9D8A00879D9C /* TheaterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DABA592250B9D8A00879D9C /* TheaterTableViewCell.swift */; };
+		3DABA595250B9D8A00879D9C /* TheaterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DABA593250B9D8A00879D9C /* TheaterTableViewCell.xib */; };
+		3DABA598250BAB1F00879D9C /* SelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DABA596250BAB1F00879D9C /* SelectedCollectionViewCell.swift */; };
+		3DABA599250BAB1F00879D9C /* SelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DABA597250BAB1F00879D9C /* SelectedCollectionViewCell.xib */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
 		3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFED1425095A9100944295 /* SelectSeatViewController.xib */; };
 		3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2288D2501818100A7847F /* LoginResultResponse.swift */; };
@@ -151,6 +155,10 @@
 		3D71E50E24FAC6020061B556 /* LogInMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInMenuViewController.xib; sourceTree = "<group>"; };
 		3D852D10250B5063003A98EB /* HomeResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResultResponse.swift; sourceTree = "<group>"; };
 		3D852D12250B50FF003A98EB /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		3DABA592250B9D8A00879D9C /* TheaterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterTableViewCell.swift; sourceTree = "<group>"; };
+		3DABA593250B9D8A00879D9C /* TheaterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterTableViewCell.xib; sourceTree = "<group>"; };
+		3DABA596250BAB1F00879D9C /* SelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DABA597250BAB1F00879D9C /* SelectedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedCollectionViewCell.xib; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
 		3DDFED1425095A9100944295 /* SelectSeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatViewController.xib; sourceTree = "<group>"; };
 		3DF2288D2501818100A7847F /* LoginResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultResponse.swift; sourceTree = "<group>"; };
@@ -291,6 +299,8 @@
 				3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */,
 				3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */,
 				3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */,
+				3DABA596250BAB1F00879D9C /* SelectedCollectionViewCell.swift */,
+				3DABA597250BAB1F00879D9C /* SelectedCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -338,6 +348,7 @@
 		3D5B15CB2507C0D90072C8D2 /* BottomPop */ = {
 			isa = PBXGroup;
 			children = (
+				3DABA591250B9D6700879D9C /* TableViewCell */,
 				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
 				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
 			);
@@ -492,6 +503,15 @@
 				3D852D10250B5063003A98EB /* HomeResultResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DABA591250B9D6700879D9C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DABA592250B9D8A00879D9C /* TheaterTableViewCell.swift */,
+				3DABA593250B9D8A00879D9C /* TheaterTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		3DF2288C250180E900A7847F /* Entity */ = {
@@ -681,6 +701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DABA599250BAB1F00879D9C /* SelectedCollectionViewCell.xib in Resources */,
 				3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */,
@@ -690,6 +711,7 @@
 				3D262C762508B554009A5288 /* ReserViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */,
+				3DABA595250B9D8A00879D9C /* TheaterTableViewCell.xib in Resources */,
 				3D5B15C92507A9B00072C8D2 /* TopTapViewController.xib in Resources */,
 				3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */,
 				3D617F4E24FFC21700EF92E0 /* TheaterRMainViewController.xib in Resources */,
@@ -767,11 +789,13 @@
 				3D5DAD91250B971B00FFAE96 /* TokenModel.swift in Sources */,
 				3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
+				3DABA594250B9D8A00879D9C /* TheaterTableViewCell.swift in Sources */,
 				3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */,
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
+				3DABA598250BAB1F00879D9C /* SelectedCollectionViewCell.swift in Sources */,
 				3D5B15C125076D190072C8D2 /* MoviePosterResultResponse.swift in Sources */,
 				3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
