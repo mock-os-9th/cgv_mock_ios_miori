@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeViewController: BaseViewController {
+class HomeViewController: BaseViewController, CLLocationManagerDelegate {
     
     //bottom sheet 기본 호출
     let bottomLauncher = BottomSheetLauncher()
@@ -34,6 +35,9 @@ class HomeViewController: BaseViewController {
     
     let logInDrawer = LogInMenuViewController(nibName: "LogInViewController", bundle: nil)
     let transition = SlideRight()
+    
+    // 위치정보 받아오기
+    var locationManager : CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,6 +115,25 @@ class HomeViewController: BaseViewController {
         // 데이터메니저 연결
         HomeDataManager().getMovieInfo(self)
         
+        // 위치정보 받아오기
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        // 포그라운드일때 위치권한요청
+        locationManager.requestWhenInUseAuthorization()
+        // 배터리에 맞게 권장 되는 최적 정확도
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        // 위치 업데이트
+        locationManager.startUpdatingLocation()
+        // 위,경도 갖고오기
+        let location = locationManager.location?.coordinate
+        let latitude = location?.latitude
+        let longitude = location?.longitude
+        
+        
+        
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -120,6 +143,8 @@ class HomeViewController: BaseViewController {
         //복구가 안될때는 : 뷰의 top을 superview로 맞춰주고 constant는 0으로
         self.navigationController?.hidesBarsOnSwipe = true
     }
+    
+    
     //This method will call when you press button.
     @objc func cgvlogoDidTap() {
         print("cgv logo clicked")
@@ -149,29 +174,32 @@ class HomeViewController: BaseViewController {
         //        mainScrollView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
         //            .isActive = true // ---- 4
         //
-     
+        
+        
         
         // 라벨 언더라인
         let labelString = "#예매차트"
         //let textColor: UIColor = .blue
         let underLineColor: UIColor = .systemPink
         let underLineStyle = NSUnderlineStyle.single.rawValue + 5
-
+        
         let labelAtributes:[NSAttributedString.Key : Any]  = [
             //NSAttributedStringKey.foregroundColor: textColor,
             NSAttributedString.Key.underlineStyle: underLineStyle,
             NSAttributedString.Key.underlineColor: underLineColor
         ]
-
+        
         let underlineAttributedString = NSAttributedString(string: labelString,
                                                            attributes: labelAtributes)
-
+        
         reserChartLabel.attributedText = underlineAttributedString
         
         //segment 글자 크기
         let font: [AnyHashable : Any] = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]
         segmnetCtrl.setTitleTextAttributes(font as! [NSAttributedString.Key : Any], for: .normal)
-
+        
+        
+        
     }
     
     /*
@@ -236,7 +264,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             cell.movieName.text = midMovieName[indexPath.row]
             cell.reserPercent.text = midPercent[indexPath.row]
             
-
+            
             return cell
         }
     }

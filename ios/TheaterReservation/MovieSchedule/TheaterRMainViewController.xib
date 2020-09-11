@@ -71,7 +71,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-OL-6O4">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-OL-6O4">
                                     <rect key="frame" x="126" y="0.0" width="35" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -244,14 +244,14 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pd-UN-HBM">
-                                    <rect key="frame" x="79" y="0.0" width="9.5" height="25"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pd-UN-HBM">
+                                    <rect key="frame" x="79" y="0.0" width="7" height="25"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQV-gp-yE0">
-                                    <rect key="frame" x="94.5" y="0.0" width="52" height="25"/>
+                                    <rect key="frame" x="92" y="0.0" width="54.5" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="cnw-et-RMr"/>
                                     </constraints>
@@ -311,13 +311,6 @@
                             </constraints>
                             <state key="normal" title="Button" image="graystar"/>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="건대입구" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W6-Rf-XP3">
-                            <rect key="frame" x="52" y="36" width="59" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGU-0F-ar0">
                             <rect key="frame" x="11" y="83" width="19.5" height="18"/>
                             <constraints>
@@ -349,6 +342,16 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="용산아이파크몰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W6-Rf-XP3" userLabel="용산아이파크몰">
+                            <rect key="frame" x="52" y="36" width="103" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9JA-Cy-njA"/>
+                                <constraint firstAttribute="width" constant="103" id="dWj-Uf-r1L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -359,9 +362,11 @@
                         <constraint firstItem="yjD-ue-C70" firstAttribute="leading" secondItem="SMV-NQ-V7v" secondAttribute="leading" id="MgQ-ZR-dGW"/>
                         <constraint firstItem="yjD-ue-C70" firstAttribute="top" secondItem="zGU-0F-ar0" secondAttribute="bottom" constant="8" id="N8E-qf-HzR"/>
                         <constraint firstItem="zGU-0F-ar0" firstAttribute="leading" secondItem="SMV-NQ-V7v" secondAttribute="leading" constant="11" id="Pe4-gv-dZs"/>
+                        <constraint firstItem="6W6-Rf-XP3" firstAttribute="centerY" secondItem="gcf-TF-IBk" secondAttribute="centerY" id="RKe-pK-p6i"/>
                         <constraint firstAttribute="trailing" secondItem="yjD-ue-C70" secondAttribute="trailing" id="ahD-J6-9Um"/>
                         <constraint firstItem="gcf-TF-IBk" firstAttribute="leading" secondItem="SMV-NQ-V7v" secondAttribute="leading" constant="11" id="c4U-U5-kR6"/>
                         <constraint firstItem="VpR-13-Dtc" firstAttribute="centerY" secondItem="zGU-0F-ar0" secondAttribute="centerY" id="p0M-F9-EDP"/>
+                        <constraint firstItem="6W6-Rf-XP3" firstAttribute="leading" secondItem="gcf-TF-IBk" secondAttribute="trailing" constant="8" id="tGT-mo-lCm"/>
                     </constraints>
                 </view>
             </subviews>

@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-
-class TheaterRMainViewController: BaseViewController {
+class TheaterRMainViewController: BaseViewController{
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -17,10 +17,16 @@ class TheaterRMainViewController: BaseViewController {
     // cell 등록을 위한 선언
     let collecionCell = "moviePosterCell"
     let collecionCell2 = "TimeSeatCollectionViewCell"
-  // cell 이미지 데이터
+    // cell 이미지 데이터
     // 요거는 데이터 모델 테스트 (데이터 모델 했을때  set으로 접근이 되서 어려움 ㅜ)
     //var moviePoster2 : [MoviePosterModel] = [MoviePosterModel(imageURL: "")]
     var moviePoster : [String] = [String]()
+    
+    //user location
+    // 위,경도
+    var userLat: String?
+    var userLon : String?
+    
     //collecion view 이미지 잘 들어가나 테스트
     
     //    private var moviePoster: [UIImage] {
@@ -66,13 +72,19 @@ class TheaterRMainViewController: BaseViewController {
         // collection view tag 지정
         collectionView.tag = 0
         timeseatcollecionView.tag = 1
-
-
+        
+        
         //datamanager 연결
         GetPosterDataManager().getPosterImage(self)
         //collectionView.reloadData()
         
+        
+     
+        
     }
+ 
+    
+    //37.538071, 127.075503
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         print("view will appear")
@@ -82,7 +94,15 @@ class TheaterRMainViewController: BaseViewController {
         super.viewDidAppear(false)
         // GetPosterDataManager().getPosterImage(self)
         print("view Did Appear")
-
+      
+        //옵셔널 바인딩
+        if let lon = userLon {
+            print(lon)
+        } else {
+            print("fail")
+        }
+        
+        
     }
     
     
@@ -109,7 +129,7 @@ extension TheaterRMainViewController: UICollectionViewDelegate, UICollectionView
                 //print("ok")
                 cell.moviePoster.image = UIImage(named: "nonePoster")
             }
-            // url string -> image
+                // url string -> image
             else if let posterUrl = NSURL(string: moviePoster[indexPath.row]),
                 let converImage = NSData(contentsOf: posterUrl as URL) {
                 cell.moviePoster.image = UIImage(data: converImage as Data)
@@ -120,7 +140,7 @@ extension TheaterRMainViewController: UICollectionViewDelegate, UICollectionView
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TimeSeatCollectionViewCell", for: indexPath) as? TimeSeatCollectionViewCell else {
                 return TimeSeatCollectionViewCell()
-
+                
             }
             //cell.moviePoster.i
             
