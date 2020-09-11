@@ -87,7 +87,6 @@ extension ContainerViewController: PageboyViewControllerDataSource, TMBarDataSou
         
         switch index {
         case 0:
-            print("0")
             return TMBarItem(title: "  지역별")
         case 1:
             return TMBarItem(title: "특별관")
