@@ -13,6 +13,7 @@ class LInputViewController: UIViewController {
     @IBOutlet weak var uidTextField: UITextField!
     @IBOutlet weak var upwTextField: UITextField!
     
+    @IBOutlet weak var btn_box: UIButton!
     
     @IBAction func pressGetSignUpResult(_ sender: UIButton) {
         let uid = uidTextField.text!
@@ -22,7 +23,7 @@ class LInputViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,6 +87,13 @@ class LInputViewController: UIViewController {
         cj1View.modalPresentationStyle = .fullScreen
         self.present(cj1View, animated: false, completion: nil)
         //self.navigationController?.pushViewController(cj1View, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+        btn_box.setBackgroundImage(UIImage(named: "noncheck1"), for: .normal)
+        btn_box.setBackgroundImage(UIImage(named: "noncheck2"), for: .selected)
+
     }
     
 }
