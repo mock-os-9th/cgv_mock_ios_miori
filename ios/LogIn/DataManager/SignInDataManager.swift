@@ -20,6 +20,7 @@ class SignInDataManager : BaseViewController {
             "id" : userinfo.uid,
             "pw" : userinfo.upw
         ]
+        UserDefaults.standard.set("",forKey: "x-access-token")
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
             

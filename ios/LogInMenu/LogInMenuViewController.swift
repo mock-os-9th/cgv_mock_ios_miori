@@ -20,7 +20,17 @@ class LogInMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        GetUserNameDataManager().getPosterImage(self)
+        //옵셔널 바인딩
+        if let jwt = UserDefaults.standard.string(forKey: "x-access-token") {
+             let tokenModel = TokenModel(token: jwt)
+            GetUserNameDataManager().getPosterImage(tokenModel, self)
+        } else {
+            let tokenModel = TokenModel(token: "")
+            GetUserNameDataManager().getPosterImage(tokenModel, self)
+        }
+        
+        
+        
     }
     
     // x버튼 누르면 닫히게 하는 함수

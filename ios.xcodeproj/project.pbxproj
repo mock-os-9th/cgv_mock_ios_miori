@@ -43,6 +43,7 @@
 		3D5CB1F624FE17B900A12CF7 /* CJ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */; };
 		3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */; };
 		3D5DAD8D250B7E3D00FFAE96 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DAD8C250B7E3D00FFAE96 /* CheckBox.swift */; };
+		3D5DAD91250B971B00FFAE96 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DAD90250B971B00FFAE96 /* TokenModel.swift */; };
 		3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */; };
 		3D617F4A24FFBEE200EF92E0 /* TheaterRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */; };
 		3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */; };
@@ -128,6 +129,7 @@
 		3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJ1ViewController.swift; sourceTree = "<group>"; };
 		3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJ1ViewController.xib; sourceTree = "<group>"; };
 		3D5DAD8C250B7E3D00FFAE96 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		3D5DAD90250B971B00FFAE96 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterRViewController.swift; sourceTree = "<group>"; };
 		3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterRViewController.xib; sourceTree = "<group>"; };
 		3D617F4B24FFC21700EF92E0 /* TheaterRMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterRMainViewController.swift; sourceTree = "<group>"; };
@@ -374,6 +376,14 @@
 			path = CheckBox;
 			sourceTree = "<group>";
 		};
+		3D5DAD8F250B970B00FFAE96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D5DAD90250B971B00FFAE96 /* TokenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3D617F4624FFBEB900EF92E0 /* TheaterReservation */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +469,7 @@
 		3D71E50C24FAC5C70061B556 /* LogInMenu */ = {
 			isa = PBXGroup;
 			children = (
+				3D5DAD8F250B970B00FFAE96 /* Model */,
 				3D2D39FB250A3E5000B1B6D4 /* Entity */,
 				3D2D39F8250A3D9D00B1B6D4 /* DataManager */,
 				3D71E50D24FAC6020061B556 /* LogInMenuViewController.swift */,
@@ -753,6 +764,7 @@
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
 				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
+				3D5DAD91250B971B00FFAE96 /* TokenModel.swift in Sources */,
 				3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */,
