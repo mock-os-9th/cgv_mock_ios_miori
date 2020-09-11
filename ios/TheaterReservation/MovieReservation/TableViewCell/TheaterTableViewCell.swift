@@ -11,6 +11,8 @@ import UIKit
 class TheaterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var myCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +23,19 @@ class TheaterTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    //recylcyer view 보완
+    override func prepareForReuse() {
+          super.prepareForReuse()
+          self.updateLayout()
+        // cell 배경 초기화
+        myCell.backgroundColor = UIColor.white
+        
+      }
+      
+      func updateLayout(){
+          self.setNeedsLayout()
+          self.layoutIfNeeded()
+      }
     
 }

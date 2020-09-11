@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESn-C9-N97">
-                        <rect key="frame" x="14" y="6.5" width="72" height="35"/>
+                        <rect key="frame" x="6" y="6.5" width="88" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="72" id="XHP-7Z-ViF"/>
+                            <constraint firstAttribute="width" constant="88" id="XHP-7Z-ViF"/>
                             <constraint firstAttribute="height" constant="35" id="qTH-oW-YXh"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title="건대입구 X">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="용산아이파크몰 X">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
@@ -38,7 +38,7 @@
             <connections>
                 <outlet property="theaterName" destination="ESn-C9-N97" id="4Nd-cB-hQf"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="226" y="72"/>
         </collectionViewCell>
     </objects>
 </document>
