@@ -63,16 +63,16 @@
                     <rect key="frame" x="0.0" y="238.5" width="414" height="128"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ8-9N-5v3" userLabel="today">
-                            <rect key="frame" x="128" y="8" width="158.5" height="24"/>
+                            <rect key="frame" x="126.5" y="8" width="161" height="24"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.9.9 (수)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Top-5w-gim">
-                                    <rect key="frame" x="0.0" y="0.0" width="119" height="24"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.9.12 (토)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Top-5w-gim">
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-OL-6O4">
-                                    <rect key="frame" x="119" y="0.0" width="39.5" height="24"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-OL-6O4">
+                                    <rect key="frame" x="126" y="0.0" width="35" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="B8C-4C-XMj"/>
                                                 <constraint firstAttribute="height" constant="50" id="RtC-hQ-SiH"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="12"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSy-if-gGl">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -110,7 +110,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="Oje-EY-W5N"/>
                                                 <constraint firstAttribute="width" constant="50" id="sO0-Fk-eNO"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="13"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w94-yR-BY1">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -129,7 +129,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="2PI-vq-4We"/>
                                                 <constraint firstAttribute="width" constant="50" id="Rqj-5u-gGo"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="14"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1k-21-7gE">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -148,7 +148,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="2Qu-rO-dXs"/>
                                                 <constraint firstAttribute="height" constant="50" id="cdk-j0-2Jm"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="15"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i7-iL-yb6">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -167,7 +167,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="4j1-xA-MzY"/>
                                                 <constraint firstAttribute="height" constant="50" id="deT-G3-awi"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="16"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mq-Wz-FXm">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -186,7 +186,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="K9Z-uy-2wi"/>
                                                 <constraint firstAttribute="width" constant="50" id="uD8-3f-mql"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="17"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgi-kT-ETC">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
@@ -205,7 +205,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="Z2q-73-i9B"/>
                                                 <constraint firstAttribute="height" constant="50" id="dYl-Xg-6HK"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="18"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CN-Rk-kgu">
                                             <rect key="frame" x="0.0" y="50" width="50" height="23"/>
