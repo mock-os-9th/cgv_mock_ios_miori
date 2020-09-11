@@ -12,8 +12,9 @@ import AlamofireObjectMapper
 
 class GetPosterDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var dmPosterArr : [String] = [String]()
     
-    func getPosterImage(_ theaterRMainViewController: TheaterRMainViewController) {
+    func getPosterImage( _ theaterRMainViewController: TheaterRMainViewController) {
        
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
@@ -33,14 +34,18 @@ class GetPosterDataManager {
                             //print("dd : \(i.image!)")
                             // 이미지링크 (string) 받아와서 배열에 저장
                             // 아래는 vc에서 moviePoster가 단순 배열 이었을 때
-                            theaterRMainViewController.moviePoster.append(i.image!)
+                            self.dmPosterArr.append(i.image!)
+                            //theaterRMainViewController.moviePoster.append(i.image!)
                             //moviePoster.movieImage.append(i.image!)
                             
-                            //posterModel.append(MoviePosterModel(imageURL: i.image!))
+                            //moviePoster.append(MoviePosterModel(imageURL: i.image!))
                            
                         }
-                        print("dm : \(theaterRMainViewController.moviePoster)")
-                        //print("dm : \(posterModel)")
+                        //print("dm : \(theaterRMainViewController.moviePoster)")
+                        theaterRMainViewController.moviePoster = self.dmPosterArr
+                        //print(self.dmPosterArr)
+                        theaterRMainViewController.collectionView.reloadData()
+                        print("finish")
 
                     } else {
                         print(resultResponse.code!)
