@@ -13,11 +13,14 @@ import AlamofireObjectMapper
 class GetUserNameDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var dmPosterArr : [String] = [String]()
+
+
+
+    //var getJWT = UserDefaults.standard.value(forKey: "x-access-token") as! String
     
-    let authheaders : [String : String] = ["x-access-token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wOS0xMCAxMzo1OToxNiIsImlkIjoibWlvcmkxMjMzIiwicHciOiJhYmNkZTEyMzQ1ISJ9.4jNdLTuL0YIjFCXWb62_o5MW4JUGpUpxPLx9dYwY4rU"]
-    
-    func getPosterImage( _ loginMenuController: LogInMenuViewController) {
-       
+  
+    func getPosterImage(_ token : TokenModel , _ loginMenuController: LogInMenuViewController) {
+        let authheaders = ["x-access-token" : token.token]
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
             
