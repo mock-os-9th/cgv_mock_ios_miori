@@ -431,11 +431,11 @@
                                                 <segment title="상영예정"/>
                                             </segments>
                                         </segmentedControl>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-0M-Q5Z">
-                                            <rect key="frame" x="0.0" y="231" width="414" height="486"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-0M-Q5Z" userLabel="midView">
+                                            <rect key="frame" x="0.0" y="231" width="414" height="420"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="N47-O3-EFJ">
-                                                    <rect key="frame" x="0.0" y="50" width="414" height="436"/>
+                                                    <rect key="frame" x="10" y="50" width="404" height="370"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GeG-84-h98">
                                                         <size key="itemSize" width="130" height="370"/>
@@ -488,14 +488,27 @@
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
                                                 <constraint firstItem="N47-O3-EFJ" firstAttribute="top" secondItem="w94-Kb-TBM" secondAttribute="bottom" constant="-10" id="0IV-Do-taA"/>
-                                                <constraint firstItem="N47-O3-EFJ" firstAttribute="leading" secondItem="lVf-0M-Q5Z" secondAttribute="leading" id="3qI-nh-Mbc"/>
+                                                <constraint firstItem="N47-O3-EFJ" firstAttribute="leading" secondItem="lVf-0M-Q5Z" secondAttribute="leading" constant="10" id="3qI-nh-Mbc"/>
                                                 <constraint firstItem="w94-Kb-TBM" firstAttribute="leading" secondItem="lVf-0M-Q5Z" secondAttribute="leading" constant="10" id="8fz-dX-nmW"/>
                                                 <constraint firstAttribute="trailing" secondItem="N47-O3-EFJ" secondAttribute="trailing" id="E6c-ZV-ygj"/>
                                                 <constraint firstAttribute="bottom" secondItem="N47-O3-EFJ" secondAttribute="bottom" id="Xjl-9T-PTP"/>
                                                 <constraint firstItem="K1r-LH-ROR" firstAttribute="centerY" secondItem="w94-Kb-TBM" secondAttribute="centerY" id="YiS-C1-o9a"/>
                                                 <constraint firstItem="w94-Kb-TBM" firstAttribute="top" secondItem="lVf-0M-Q5Z" secondAttribute="top" constant="15" id="Ylb-TL-jp3"/>
-                                                <constraint firstAttribute="height" constant="486" id="fDw-BH-CZA"/>
+                                                <constraint firstAttribute="height" constant="420" id="fDw-BH-CZA"/>
                                                 <constraint firstAttribute="trailing" secondItem="K1r-LH-ROR" secondAttribute="trailing" constant="8" id="hTI-fd-cUd"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heM-9O-dTZ">
+                                            <rect key="frame" x="0.0" y="666" width="414" height="160"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trapezoid" translatesAutoresizingMaskIntoConstraints="NO" id="nIn-Ol-dUZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="160"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="160" id="73A-u6-wGl"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -503,12 +516,15 @@
                                     <constraints>
                                         <constraint firstItem="gQn-Dw-k7Y" firstAttribute="top" secondItem="DiM-sM-dIa" secondAttribute="bottom" constant="18" id="2Tz-2Q-uBZ"/>
                                         <constraint firstAttribute="trailing" secondItem="lVf-0M-Q5Z" secondAttribute="trailing" id="Af4-gz-PY6"/>
+                                        <constraint firstAttribute="trailing" secondItem="heM-9O-dTZ" secondAttribute="trailing" id="ChI-w9-crI"/>
                                         <constraint firstAttribute="trailing" secondItem="DiM-sM-dIa" secondAttribute="trailing" id="IaX-5Q-0pZ"/>
                                         <constraint firstItem="DiM-sM-dIa" firstAttribute="top" secondItem="w3r-DQ-ws8" secondAttribute="top" constant="18" id="KMJ-qO-fnU"/>
+                                        <constraint firstItem="heM-9O-dTZ" firstAttribute="top" secondItem="lVf-0M-Q5Z" secondAttribute="bottom" constant="15" id="U01-yF-fJO"/>
                                         <constraint firstAttribute="trailing" secondItem="gQn-Dw-k7Y" secondAttribute="trailing" id="YqJ-fA-NGQ"/>
                                         <constraint firstItem="lVf-0M-Q5Z" firstAttribute="leading" secondItem="w3r-DQ-ws8" secondAttribute="leading" id="a2h-4N-woX"/>
                                         <constraint firstAttribute="height" constant="1500" id="cRm-ny-8kJ"/>
                                         <constraint firstItem="lVf-0M-Q5Z" firstAttribute="top" secondItem="gQn-Dw-k7Y" secondAttribute="bottom" id="g83-vO-ALs"/>
+                                        <constraint firstItem="heM-9O-dTZ" firstAttribute="leading" secondItem="w3r-DQ-ws8" secondAttribute="leading" id="mg3-Y4-33C"/>
                                         <constraint firstItem="DiM-sM-dIa" firstAttribute="leading" secondItem="w3r-DQ-ws8" secondAttribute="leading" id="vav-QQ-9xM"/>
                                         <constraint firstItem="gQn-Dw-k7Y" firstAttribute="leading" secondItem="w3r-DQ-ws8" secondAttribute="leading" id="xVX-gi-bJ8"/>
                                     </constraints>
@@ -551,5 +567,6 @@
     <resources>
         <image name="cgv_ad" width="128" height="128"/>
         <image name="pari" width="128" height="128"/>
+        <image name="trapezoid" width="471" height="315"/>
     </resources>
 </document>
