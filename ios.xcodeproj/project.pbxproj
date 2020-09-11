@@ -590,9 +590,9 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				BD9BF17122F9C31D009E47EB /* config */,
 				3D5DAD8E250B7EB900FFAE96 /* CheckBox */,
 				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
-				BD9BF17122F9C31D009E47EB /* config */,
 				3D617F532500B1EC00EF92E0 /* SheetView */,
 				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
 				BD9BF17022F9C318009E47EB /* Splash */,

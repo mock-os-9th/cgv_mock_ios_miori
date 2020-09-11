@@ -20,13 +20,16 @@ class LInputViewController: UIViewController {
         let upw = upwTextField.text!
         let userInfo = LoginModel(id: uid, pw: upw)
         SignInDataManager().getLogin(userInfo, self)
-        self.dismiss(animated: false, completion: nil)
+        print("new : \(userInfo.uid)")
+        //self.dismiss(animated: false, completion: nil)
     }
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 딴 곳 누르면 키보드 들어가게 하기 (템플릿 이용)
+        self.hideKeyboardWhenTappedAround()
         let width = self.view.frame.width
         
         
