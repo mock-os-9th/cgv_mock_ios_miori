@@ -27,9 +27,6 @@ class SelectSeatViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         
-        //navibar 숨기기
-        //복구가 안될때는 : 뷰의 top을 superview로 맞춰주고 constant는 0으로
-        self.navigationController?.hidesBarsOnSwipe = true
     }
     
     
