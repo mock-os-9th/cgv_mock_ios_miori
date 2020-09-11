@@ -47,10 +47,13 @@ class SheetViewController: UIViewController {
     }
     
     func setupBlurView() {
+        
         view.addSubview(blurredEffectView)
+        //blurredEffectView.layer.cornerRadius = 4.0
         
         NSLayoutConstraint.activate([
-            blurredEffectView.topAnchor.constraint(equalTo: self.view.topAnchor),
+
+            blurredEffectView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: -10),
             blurredEffectView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             blurredEffectView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             blurredEffectView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
@@ -86,7 +89,7 @@ class SheetViewController: UIViewController {
         
         let screenSize = UIScreen.main.bounds
         //올라오는 높이
-        let heightValue = screenSize.size.height * 0.8
+        let heightValue = screenSize.size.height * 0.75
         self.view.layoutIfNeeded()
         UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.notchBottomConstraint.constant = -heightValue
