@@ -23,6 +23,6 @@ struct ColorPalette {
     // rgb 237 237 237
     static let borderSoft: UInt = 0xededed
     // cgv tab color rgb 226 98 72
-    static let cgvTab : UInt = 0xe26248
+    static let cgvTabColor : UInt = 0xe26248
     
 }
