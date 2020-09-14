@@ -24,5 +24,7 @@ struct ColorPalette {
     static let borderSoft: UInt = 0xededed
     // cgv tab color rgb 226 98 72
     static let cgvTabColor : UInt = 0xe26248
+    // cgv pink color rgb 207 44 108
+    static let cgvPink : UInt = 0xCF2C6C
     
 }
