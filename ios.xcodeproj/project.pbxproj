@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D06AF81250FC6BF005661DA /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06AF7F250FC6BF005661DA /* DetailMovieViewController.swift */; };
+		3D06AF82250FC6BF005661DA /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D06AF80250FC6BF005661DA /* DetailMovieViewController.xib */; };
 		3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */; };
 		3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */; };
 		3D262C762508B554009A5288 /* ReserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D262C742508B554009A5288 /* ReserViewController.xib */; };
@@ -75,6 +77,10 @@
 		3DABA5A5250BBBD200879D9C /* SelectPosterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DABA5A3250BBBD200879D9C /* SelectPosterCollectionViewCell.xib */; };
 		3DABA5A9250BBF9A00879D9C /* PosterResetDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DABA5A8250BBF9A00879D9C /* PosterResetDataManager.swift */; };
 		3DABA5AB250BBFAF00879D9C /* PosterReserResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DABA5AA250BBFAF00879D9C /* PosterReserResultResponse.swift */; };
+		3DB7BBF6250FE94D00853F62 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BBF5250FE94D00853F62 /* RadioButton.swift */; };
+		3DB7BBF925100F5D00853F62 /* SignUpSuccessPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BBF825100F5D00853F62 /* SignUpSuccessPopUp.storyboard */; };
+		3DB7BBFB251011E200853F62 /* SignUpSuccessPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BBFA251011E200853F62 /* SignUpSuccessPopUpDelegate.swift */; };
+		3DB7BBFD2510120C00853F62 /* SignUpSuccessPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BBFC2510120C00853F62 /* SignUpSuccessPopUp.swift */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
 		3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFED1425095A9100944295 /* SelectSeatViewController.xib */; };
 		3DE24879250C0E7100A91419 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24878250C0E7100A91419 /* ScheduleResponse.swift */; };
@@ -105,6 +111,8 @@
 
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D06AF7F250FC6BF005661DA /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		3D06AF80250FC6BF005661DA /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
 		3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeatCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSeatCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D262C742508B554009A5288 /* ReserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReserViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +181,10 @@
 		3DABA5A3250BBBD200879D9C /* SelectPosterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPosterCollectionViewCell.xib; sourceTree = "<group>"; };
 		3DABA5A8250BBF9A00879D9C /* PosterResetDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterResetDataManager.swift; sourceTree = "<group>"; };
 		3DABA5AA250BBFAF00879D9C /* PosterReserResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterReserResultResponse.swift; sourceTree = "<group>"; };
+		3DB7BBF5250FE94D00853F62 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		3DB7BBF825100F5D00853F62 /* SignUpSuccessPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSuccessPopUp.storyboard; sourceTree = "<group>"; };
+		3DB7BBFA251011E200853F62 /* SignUpSuccessPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessPopUpDelegate.swift; sourceTree = "<group>"; };
+		3DB7BBFC2510120C00853F62 /* SignUpSuccessPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessPopUp.swift; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
 		3DDFED1425095A9100944295 /* SelectSeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatViewController.xib; sourceTree = "<group>"; };
 		3DE24878250C0E7100A91419 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
@@ -224,6 +236,15 @@
 				56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D06AF7E250FC4E8005661DA /* DetailMovie */ = {
+			isa = PBXGroup;
+			children = (
+				3D06AF7F250FC6BF005661DA /* DetailMovieViewController.swift */,
+				3D06AF80250FC6BF005661DA /* DetailMovieViewController.xib */,
+			);
+			path = DetailMovie;
 			sourceTree = "<group>";
 		};
 		3D2D39F8250A3D9D00B1B6D4 /* DataManager */ = {
@@ -315,8 +336,6 @@
 				3D5B15B925075E760072C8D2 /* MovieCollectionViewCell.xib */,
 				3D262C6D2508A981009A5288 /* TimeSeatCollectionViewCell.swift */,
 				3D262C6E2508A981009A5288 /* TimeSeatCollectionViewCell.xib */,
-				3DABA596250BAB1F00879D9C /* SelectedCollectionViewCell.swift */,
-				3DABA597250BAB1F00879D9C /* SelectedCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -364,6 +383,7 @@
 		3D5B15CB2507C0D90072C8D2 /* MovieReservation */ = {
 			isa = PBXGroup;
 			children = (
+				3D9EC768250F0C2F009FB869 /* CollectionViewCell */,
 				3DABA591250B9D6700879D9C /* TableViewCell */,
 				3D617F4724FFBEE200EF92E0 /* TheaterRViewController.swift */,
 				3D617F4824FFBEE200EF92E0 /* TheaterRViewController.xib */,
@@ -383,16 +403,17 @@
 			path = LogIn;
 			sourceTree = "<group>";
 		};
-		3D5CB1F324FE179400A12CF7 /* CJONE1 */ = {
+		3D5CB1F324FE179400A12CF7 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				3DB7BBF725100EE400853F62 /* PopUp */,
 				3D5B15A8250628850072C8D2 /* Model */,
 				3D3169A9250172A500925D10 /* Entity */,
 				3D3169A82501729400925D10 /* DataManager */,
 				3D5CB1F424FE17B900A12CF7 /* CJ1ViewController.swift */,
 				3D5CB1F524FE17B900A12CF7 /* CJ1ViewController.xib */,
 			);
-			path = CJONE1;
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		3D5DAD8E250B7EB900FFAE96 /* CheckBox */ = {
@@ -521,6 +542,15 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		3D9EC768250F0C2F009FB869 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DABA596250BAB1F00879D9C /* SelectedCollectionViewCell.swift */,
+				3DABA597250BAB1F00879D9C /* SelectedCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		3DABA591250B9D6700879D9C /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +595,24 @@
 				3DABA5AA250BBFAF00879D9C /* PosterReserResultResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DB7BBF4250FE92A00853F62 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				3DB7BBF5250FE94D00853F62 /* RadioButton.swift */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
+		3DB7BBF725100EE400853F62 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				3DB7BBF825100F5D00853F62 /* SignUpSuccessPopUp.storyboard */,
+				3DB7BBFA251011E200853F62 /* SignUpSuccessPopUpDelegate.swift */,
+				3DB7BBFC2510120C00853F62 /* SignUpSuccessPopUp.swift */,
+			);
+			path = PopUp;
 			sourceTree = "<group>";
 		};
 		3DE24875250C0C6A00A91419 /* MovieSchedule */ = {
@@ -701,8 +749,10 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				BD9BF17122F9C31D009E47EB /* config */,
+				3DB7BBF4250FE92A00853F62 /* RadioButton */,
 				3D5DAD8E250B7EB900FFAE96 /* CheckBox */,
+				3D06AF7E250FC4E8005661DA /* DetailMovie */,
+				BD9BF17122F9C31D009E47EB /* config */,
 				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
 				3D617F532500B1EC00EF92E0 /* SheetView */,
 				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
@@ -711,7 +761,7 @@
 				3D59191B24FAD6AB005CEAB6 /* Home */,
 				3D71E50C24FAC5C70061B556 /* LogInMenu */,
 				3D5CB1EA24FDFF2C00A12CF7 /* LogIn */,
-				3D5CB1F324FE179400A12CF7 /* CJONE1 */,
+				3D5CB1F324FE179400A12CF7 /* SignUp */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
@@ -783,6 +833,7 @@
 			files = (
 				3DABA599250BAB1F00879D9C /* SelectedCollectionViewCell.xib in Resources */,
 				3D5CB1F724FE17B900A12CF7 /* CJ1ViewController.xib in Resources */,
+				3DB7BBF925100F5D00853F62 /* SignUpSuccessPopUp.storyboard in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */,
 				3D617F682500C05F00EF92E0 /* ContainerViewController.xib in Resources */,
@@ -803,6 +854,7 @@
 				3D5B15A72505E90A0072C8D2 /* ContainerHomeViewController.xib in Resources */,
 				3D663364250B3BFB004634CC /* TopImageCollectionViewCell.xib in Resources */,
 				3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */,
+				3D06AF82250FC6BF005661DA /* DetailMovieViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				3D5B15BB25075E760072C8D2 /* MovieCollectionViewCell.xib in Resources */,
 				3D66336A250B46DA004634CC /* ChartCollectionViewCell.xib in Resources */,
@@ -866,9 +918,11 @@
 				3D5B15A32505E8DE0072C8D2 /* SheetViewControllerHome.swift in Sources */,
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
+				3D06AF81250FC6BF005661DA /* DetailMovieViewController.swift in Sources */,
 				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				3D5DAD91250B971B00FFAE96 /* TokenModel.swift in Sources */,
+				3DB7BBFB251011E200853F62 /* SignUpSuccessPopUpDelegate.swift in Sources */,
 				3D852D11250B5063003A98EB /* HomeResultResponse.swift in Sources */,
 				3DABA5AB250BBFAF00879D9C /* PosterReserResultResponse.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
@@ -917,9 +971,11 @@
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */,
 				3D5B15B025068CE80072C8D2 /* PhoneAuth.swift in Sources */,
+				3DB7BBFD2510120C00853F62 /* SignUpSuccessPopUp.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				3DE24879250C0E7100A91419 /* ScheduleResponse.swift in Sources */,
 				3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */,
+				3DB7BBF6250FE94D00853F62 /* RadioButton.swift in Sources */,
 				3D663363250B3BFB004634CC /* TopImageCollectionViewCell.swift in Sources */,
 				3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
