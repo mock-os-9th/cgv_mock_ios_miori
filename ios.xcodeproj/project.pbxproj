@@ -81,6 +81,10 @@
 		3DB7BBF925100F5D00853F62 /* SignUpSuccessPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7BBF825100F5D00853F62 /* SignUpSuccessPopUp.storyboard */; };
 		3DB7BBFB251011E200853F62 /* SignUpSuccessPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BBFA251011E200853F62 /* SignUpSuccessPopUpDelegate.swift */; };
 		3DB7BBFD2510120C00853F62 /* SignUpSuccessPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7BBFC2510120C00853F62 /* SignUpSuccessPopUp.swift */; };
+		3DC5FECC25109EDC00627AA3 /* DetailMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FECA25109EDC00627AA3 /* DetailMovieTableViewCell.swift */; };
+		3DC5FECD25109EDC00627AA3 /* DetailMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5FECB25109EDC00627AA3 /* DetailMovieTableViewCell.xib */; };
+		3DC5FED12510A58100627AA3 /* DetailMovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FED02510A58100627AA3 /* DetailMovieResponse.swift */; };
+		3DC5FED32510A66500627AA3 /* DetailMovieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FED22510A66500627AA3 /* DetailMovieDataManager.swift */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
 		3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFED1425095A9100944295 /* SelectSeatViewController.xib */; };
 		3DE24879250C0E7100A91419 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24878250C0E7100A91419 /* ScheduleResponse.swift */; };
@@ -185,6 +189,10 @@
 		3DB7BBF825100F5D00853F62 /* SignUpSuccessPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSuccessPopUp.storyboard; sourceTree = "<group>"; };
 		3DB7BBFA251011E200853F62 /* SignUpSuccessPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessPopUpDelegate.swift; sourceTree = "<group>"; };
 		3DB7BBFC2510120C00853F62 /* SignUpSuccessPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessPopUp.swift; sourceTree = "<group>"; };
+		3DC5FECA25109EDC00627AA3 /* DetailMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieTableViewCell.swift; sourceTree = "<group>"; };
+		3DC5FECB25109EDC00627AA3 /* DetailMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieTableViewCell.xib; sourceTree = "<group>"; };
+		3DC5FED02510A58100627AA3 /* DetailMovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieResponse.swift; sourceTree = "<group>"; };
+		3DC5FED22510A66500627AA3 /* DetailMovieDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieDataManager.swift; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
 		3DDFED1425095A9100944295 /* SelectSeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatViewController.xib; sourceTree = "<group>"; };
 		3DE24878250C0E7100A91419 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
@@ -241,6 +249,9 @@
 		3D06AF7E250FC4E8005661DA /* DetailMovie */ = {
 			isa = PBXGroup;
 			children = (
+				3DC5FECF2510A53D00627AA3 /* Entity */,
+				3DC5FECE2510A52E00627AA3 /* DataManager */,
+				3DC5FEC925109EC200627AA3 /* TableViewCell */,
 				3D06AF7F250FC6BF005661DA /* DetailMovieViewController.swift */,
 				3D06AF80250FC6BF005661DA /* DetailMovieViewController.xib */,
 			);
@@ -615,6 +626,31 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
+		3DC5FEC925109EC200627AA3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5FECA25109EDC00627AA3 /* DetailMovieTableViewCell.swift */,
+				3DC5FECB25109EDC00627AA3 /* DetailMovieTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		3DC5FECE2510A52E00627AA3 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5FED22510A66500627AA3 /* DetailMovieDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3DC5FECF2510A53D00627AA3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5FED02510A58100627AA3 /* DetailMovieResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		3DE24875250C0C6A00A91419 /* MovieSchedule */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,19 +785,19 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				3DB7BBF4250FE92A00853F62 /* RadioButton */,
-				3D5DAD8E250B7EB900FFAE96 /* CheckBox */,
-				3D06AF7E250FC4E8005661DA /* DetailMovie */,
 				BD9BF17122F9C31D009E47EB /* config */,
-				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
+				3D5DAD8E250B7EB900FFAE96 /* CheckBox */,
+				3DB7BBF4250FE92A00853F62 /* RadioButton */,
 				3D617F532500B1EC00EF92E0 /* SheetView */,
-				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
-				BD9BF17022F9C318009E47EB /* Splash */,
-				BD9BF16F22F9C314009E47EB /* Main */,
 				3D59191B24FAD6AB005CEAB6 /* Home */,
 				3D71E50C24FAC5C70061B556 /* LogInMenu */,
 				3D5CB1EA24FDFF2C00A12CF7 /* LogIn */,
 				3D5CB1F324FE179400A12CF7 /* SignUp */,
+				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
+				3D06AF7E250FC4E8005661DA /* DetailMovie */,
+				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
+				BD9BF17022F9C318009E47EB /* Splash */,
+				BD9BF16F22F9C314009E47EB /* Main */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
@@ -840,6 +876,7 @@
 				3D2D3A05250A58AE00B1B6D4 /* KakaopayViewController.xib in Resources */,
 				3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */,
 				3D262C762508B554009A5288 /* ReserViewController.xib in Resources */,
+				3DC5FECD25109EDC00627AA3 /* DetailMovieTableViewCell.xib in Resources */,
 				3DABA5A5250BBBD200879D9C /* SelectPosterCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */,
@@ -919,6 +956,7 @@
 				3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */,
 				3D5CB1F124FE0FE000A12CF7 /* LInputViewController.swift in Sources */,
 				3D06AF81250FC6BF005661DA /* DetailMovieViewController.swift in Sources */,
+				3DC5FED32510A66500627AA3 /* DetailMovieDataManager.swift in Sources */,
 				3D617F642500B45700EF92E0 /* SheetViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				3D5DAD91250B971B00FFAE96 /* TokenModel.swift in Sources */,
@@ -933,6 +971,7 @@
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
 				3DABA59F250BB7CC00879D9C /* SelectMovieViewController.swift in Sources */,
+				3DC5FED12510A58100627AA3 /* DetailMovieResponse.swift in Sources */,
 				3DABA598250BAB1F00879D9C /* SelectedCollectionViewCell.swift in Sources */,
 				3D5B15C125076D190072C8D2 /* MoviePosterResultResponse.swift in Sources */,
 				3D262C7A2508BF76009A5288 /* ReserViewController.swift in Sources */,
@@ -967,6 +1006,7 @@
 				3DABA5A4250BBBD200879D9C /* SelectPosterCollectionViewCell.swift in Sources */,
 				3D5B15AE250678250072C8D2 /* AuthModel.swift in Sources */,
 				3D617F562500B22100EF92E0 /* BottomSheetUsingFrames.swift in Sources */,
+				3DC5FECC25109EDC00627AA3 /* DetailMovieTableViewCell.swift in Sources */,
 				3D5B15AA2506289D0072C8D2 /* SignUpModel.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				3D71E50F24FAC6020061B556 /* LogInMenuViewController.swift in Sources */,
