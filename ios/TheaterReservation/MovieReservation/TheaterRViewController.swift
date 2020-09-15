@@ -39,7 +39,7 @@ class TheaterRViewController: BaseViewController {
         
     }
     var bigCityArr = ["서울(29)","경기(50)","인천(9)","강원(3)","대전/충청(20)","대구(8)","부산/울산(15)","경상(15)","광주/전라/제주(23)"]
-    var smallCityArr = ["강남","강변","건대입구","구로","대학로","동대문","등촌","명동","목동","미아","불광","상봉","성신여대입구","송파","수유","신촌아트레온","씨네드쉐프 용산","용산아이파크몰"]
+    var smallCityArr = ["CGV를 선택해주세요.\n최대 5개까지 선택 가능합니다. ","강남","강변","건대입구","구로","대학로","동대문","등촌","명동","목동","미아","불광","상봉","성신여대입구","송파","수유","신촌아트레온","씨네드쉐프 용산","용산아이파크몰","천호","청단씨네시티","피카디리19558",""]
     
     var selectSmallCityArr : [String] = [String]()
     override func viewDidLoad() {
@@ -110,7 +110,17 @@ extension TheaterRViewController : UITableViewDelegate, UITableViewDataSource {
         } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TheaterTableViewCell", for: indexPath) as! TheaterTableViewCell
-            cell.locationLabel.text = smallCityArr[indexPath.row]
+            if indexPath.row < 1{
+                // 맨 위의 셀 라벨 글자 크기 수정
+                cell.locationLabel.text = smallCityArr[indexPath.row]
+                cell.locationLabel.font = UIFont.systemFont(ofSize: 10)
+                cell.locationLabel.textColor = .gray
+            } else {
+                // 나머지 셀은 회색으로
+                cell.locationLabel.text = smallCityArr[indexPath.row]
+                
+            }
+            
             return cell
             
             
@@ -122,14 +132,24 @@ extension TheaterRViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath as IndexPath)!
         if #available(iOS 13.0, *) {
-            // 극장 눌렀을 때 밑에 콜렉션 뷰 나타나게 하기
-            selectzoneView.isHidden = false
-            // 누른 셀 회색으로 변경
-            cell.contentView.backgroundColor = UIColor.systemGray4
-            // 셀 내용 arr에 추가
-            selectSmallCityArr.append("   " + smallCityArr[indexPath.row] + "   X   ")
-            //칼라 팔레트 템플릿 이용
-            selectBtn.backgroundColor = UIColor(hex: ColorPalette.cgvTabColor, alpha: 1.0)
+            if indexPath.row < 1 {
+                cell.isUserInteractionEnabled = false
+                cell.contentView.backgroundColor = .white
+            } else {
+                // 극장 눌렀을 때 밑에 콜렉션 뷰 나타나게 하기
+                selectzoneView.isHidden = false
+                // 누른 셀 회색으로 변경
+                cell.contentView.backgroundColor = UIColor.systemGray4
+                // 셀 내용 arr에 추가
+                selectSmallCityArr.append("   " + smallCityArr[indexPath.row] + "   X   ")
+                //칼라 팔레트 템플릿 이용
+                selectBtn.backgroundColor = UIColor(hex: ColorPalette.cgvTabColor, alpha: 1.0)
+                // 5개 까지만
+                if selectSmallCityArr.count > 4 {
+                    cell.isUserInteractionEnabled = false
+                    self.presentAlert(title: "5개까지만 가능합니다", message: "확인")
+                }
+            }
         } else {
             // Fallback on earlier versions
         }
@@ -159,7 +179,14 @@ extension TheaterRViewController : UICollectionViewDataSource,UICollectionViewDe
         return cell
     }
     
- 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let selectedCell = collectionView.indexPathsForSelectedItems{
+            selectSmallCityArr.remove(at: indexPath.row)
+            selectCV.deleteItems(at: [IndexPath(row: indexPath.row, section: 0)])
+            selectCV.reloadData()
+        }
+        
+    }
     
     
 }

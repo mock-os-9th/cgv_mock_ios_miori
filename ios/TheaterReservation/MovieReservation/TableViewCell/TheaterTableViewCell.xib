@@ -17,10 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVq-OX-YUu">
-                        <rect key="frame" x="16" y="11.5" width="150" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVq-OX-YUu">
+                        <rect key="frame" x="16" y="5.5" width="150" height="33"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="BxP-dF-wCN"/>
+                            <constraint firstAttribute="height" constant="33" id="BxP-dF-wCN"/>
                             <constraint firstAttribute="width" constant="150" id="fzY-mT-t0i"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>

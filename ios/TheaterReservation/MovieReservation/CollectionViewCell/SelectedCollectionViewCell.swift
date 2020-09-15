@@ -8,11 +8,14 @@
 
 import UIKit
 
+
+
 class SelectedCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var theaterName: UIButton!
     
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

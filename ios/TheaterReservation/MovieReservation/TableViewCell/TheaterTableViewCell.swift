@@ -30,6 +30,8 @@ class TheaterTableViewCell: UITableViewCell {
           self.updateLayout()
         // cell 배경 초기화
         myCell.backgroundColor = UIColor.white
+        locationLabel.font = UIFont.systemFont(ofSize: 16)
+     locationLabel.textColor = .black
         
       }
       
