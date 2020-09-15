@@ -12,12 +12,24 @@ class SelectedCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var theaterName: UIButton!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         theaterName.layer.borderColor = UIColor.white.cgColor
         theaterName.layer.borderWidth = 2
         theaterName.layer.cornerRadius = 10
+        theaterName.sizeToFit()
+        
+        theaterName.translatesAutoresizingMaskIntoConstraints = false
+    
+        
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        // 재사용 문제
+        //theaterName.titleLabel?.text = ""
+        
+    }
 }

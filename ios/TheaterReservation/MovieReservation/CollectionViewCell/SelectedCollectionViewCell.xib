@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESn-C9-N97">
-                        <rect key="frame" x="6" y="6.5" width="88" height="35"/>
+                        <rect key="frame" x="32" y="6.5" width="36" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="88" id="XHP-7Z-ViF"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="HkQ-lA-VFS"/>
                             <constraint firstAttribute="height" constant="35" id="qTH-oW-YXh"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="용산아이파크몰 X">
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <state key="normal" title="강남 X">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>

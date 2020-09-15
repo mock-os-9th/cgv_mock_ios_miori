@@ -26,17 +26,17 @@ class TheaterRViewController: BaseViewController {
         // 영화선택 화면 보여줘
         self.present(SelectMovieViewController(), animated: false, completion: nil)
         
-//        let selectMovieVC = SelectMovieViewController()
-//        //full screen으로
-//        selectMovieVC.modalPresentationStyle = .fullScreen
-//        // self.present(loginput, animated: false, completion: nil)
-//        // currentVC => FirstViewController
-//        guard let pvc = self.presentingViewController else { return }
-//
-//        self.dismiss(animated: false) {
-//            pvc.present(selectMovieVC, animated: true, completion: nil)
-//        }
-
+        //        let selectMovieVC = SelectMovieViewController()
+        //        //full screen으로
+        //        selectMovieVC.modalPresentationStyle = .fullScreen
+        //        // self.present(loginput, animated: false, completion: nil)
+        //        // currentVC => FirstViewController
+        //        guard let pvc = self.presentingViewController else { return }
+        //
+        //        self.dismiss(animated: false) {
+        //            pvc.present(selectMovieVC, animated: true, completion: nil)
+        //        }
+        
     }
     var bigCityArr = ["서울(29)","경기(50)","인천(9)","강원(3)","대전/충청(20)","대구(8)","부산/울산(15)","경상(15)","광주/전라/제주(23)"]
     var smallCityArr = ["강남","강변","건대입구","구로","대학로","동대문","등촌","명동","목동","미아","불광","상봉","성신여대입구","송파","수유","신촌아트레온","씨네드쉐프 용산","용산아이파크몰"]
@@ -107,9 +107,6 @@ extension TheaterRViewController : UITableViewDelegate, UITableViewDataSource {
             }
             return cell
             
-            
-            
-            
         } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "TheaterTableViewCell", for: indexPath) as! TheaterTableViewCell
@@ -130,21 +127,21 @@ extension TheaterRViewController : UITableViewDelegate, UITableViewDataSource {
             // 누른 셀 회색으로 변경
             cell.contentView.backgroundColor = UIColor.systemGray4
             // 셀 내용 arr에 추가
-            selectSmallCityArr.append(smallCityArr[indexPath.row])
+            selectSmallCityArr.append("   " + smallCityArr[indexPath.row] + "   X   ")
             //칼라 팔레트 템플릿 이용
             selectBtn.backgroundColor = UIColor(hex: ColorPalette.cgvTabColor, alpha: 1.0)
-            // 콜렉션뷰 데이터 리로드
-            // 이거 해줘야 데이터 갱신됨
-            selectCV.reloadData()
         } else {
             // Fallback on earlier versions
         }
-
-        //print("tv : \(selectSmallCityArr)")
+        // 콜렉션뷰 데이터 리로드
+        // 이거 해줘야 데이터 갱신됨
+        selectCV.reloadData()
+        print("tv : \(selectSmallCityArr)")
     }
     
 }
 
+// 선택된 영화관 태그 처럼 띄워주는 부분
 extension TheaterRViewController : UICollectionViewDataSource,UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -156,9 +153,13 @@ extension TheaterRViewController : UICollectionViewDataSource,UICollectionViewDe
             return SelectedCollectionViewCell()
         }
         print("check : \(selectSmallCityArr)")
-        cell.theaterName.titleLabel?.text = selectSmallCityArr[indexPath.row]
+        //cell.theaterName.titleLabel?.text = selectSmallCityArr[indexPath.row]
+        // setTitle 해야 잘 작동함
+        cell.theaterName.setTitle(selectSmallCityArr[indexPath.row], for: .normal)
         return cell
     }
+    
+ 
     
     
 }
