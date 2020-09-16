@@ -12,18 +12,16 @@ import AlamofireObjectMapper
 
 class DetailMovieDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var dmPosterArr : [String] = [String]()
-    var dmMovieNameArr : [String] = [String]()
-    var dmMoviePercent : [String] = [String]()
+    
     
     func getMovieInfo( _ detailMovieViewController: DetailMovieViewController) {
-       
+        
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
             
             //test용으로 뒤에 "/movies" 추가함 -> 성공!
             .request("\(self.appDelegate.baseUrl)/movies", method: .get)
-                
+            
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<DetailMovieResponse>) in
                 switch response.result {
@@ -34,15 +32,27 @@ class DetailMovieDataManager {
                         
                         // 뷰컨트롤러 딕셔너리 접근
                         for i in resultResponse.result{
-                            detailMovieViewController.movieDict.updateValue(i.titleKo!, forKey: "titleKo")
-                           
+                            
+                            detailMovieViewController.movieDetail.titleKo.append(i.titleKo!)
+                            
+                            detailMovieViewController.movieDetail.ageLimit.append(i.ageLimit!)
+                            
+                            detailMovieViewController.movieDetail.bookingRate.append(i.bookingRate!)
+                            
+                            detailMovieViewController.movieDetail.image.append(i.image!)
+                            
+//                            detailMovieViewController.movieDetail.totalAud.append(i.totalAud!)
+//
+//                            detailMovieViewController.movieDetail.todayAud.append(i.todayAud!)
+                            
+                     
                         }
-                        //print("dm : \(theaterRMainViewController.moviePoster)")
+                        print("dm : \(detailMovieViewController.movieDetail.titleKo)")
                         
-                        // 리로드 데이터 콜렉션뷰
-                        //homeViewController.midCollectionView.reloadData()
+                        // 리로드 데이터 테이블부
+                        detailMovieViewController.detailTV.reloadData()
                         print("finish")
-
+                        
                     } else {
                         print(resultResponse.code!)
                     }

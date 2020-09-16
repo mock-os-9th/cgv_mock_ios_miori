@@ -35,7 +35,7 @@ struct DetailMovie {
     var image: String!
     var totalAud : Int!
     var todayAud : Int!
-    var now : Bool
+    var now : Bool!
 }
 
 extension DetailMovie: Mappable {

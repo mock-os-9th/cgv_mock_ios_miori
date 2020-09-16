@@ -58,7 +58,7 @@
                         <constraint firstItem="nkM-YO-mWN" firstAttribute="top" secondItem="s3U-W8-HN8" secondAttribute="top" id="xYM-X1-Klj"/>
                     </constraints>
                 </stackView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-MJ-blx">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-MJ-blx">
                     <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -66,7 +66,7 @@
                     </constraints>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="・예매율순" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2d-dA-C73">
-                    <rect key="frame" x="20" y="161" width="77" height="19"/>
+                    <rect key="frame" x="20" y="161" width="77" height="20.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="Kgk-Y0-1LW"/>
                     </constraints>
@@ -75,7 +75,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✓현재상영작보기" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-G0-Ms3">
-                    <rect key="frame" x="269" y="160.5" width="125" height="20.5"/>
+                    <rect key="frame" x="269" y="161" width="125" height="20.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="125" id="393-7h-jgM"/>
                     </constraints>
@@ -88,7 +88,6 @@
             <constraints>
                 <constraint firstItem="tCe-G0-Ms3" firstAttribute="centerY" secondItem="m2d-dA-C73" secondAttribute="centerY" id="01U-rJ-hY5"/>
                 <constraint firstItem="K1i-MJ-blx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ebr-km-3OP"/>
-                <constraint firstItem="K1i-MJ-blx" firstAttribute="top" secondItem="m2d-dA-C73" secondAttribute="bottom" constant="16" id="HnK-LF-ckV"/>
                 <constraint firstAttribute="bottom" secondItem="K1i-MJ-blx" secondAttribute="bottom" id="Qzj-rm-zsY"/>
                 <constraint firstItem="s3U-W8-HN8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TJz-S8-aKT"/>
                 <constraint firstItem="m2d-dA-C73" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XuF-He-af1"/>
