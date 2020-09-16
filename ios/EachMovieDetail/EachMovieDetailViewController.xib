@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EachMovieDetailViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3u-vo-IdM">
+                    <rect key="frame" x="0.0" y="832" width="414" height="64"/>
+                    <color key="backgroundColor" red="0.87005221840000002" green="0.3818430901" blue="0.27836856250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="2jA-Yk-lL4"/>
+                        <constraint firstAttribute="height" constant="64" id="85y-KB-uur"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="예매하기">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPf-Vc-5OP">
+                    <rect key="frame" x="0.0" y="88" width="414" height="744"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjJ-td-FgY" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenetGaro" translatesAutoresizingMaskIntoConstraints="NO" id="WVs-sB-OK6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="146" id="oDu-Vs-yY4"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bY-cZ-djs">
+                                    <rect key="frame" x="0.0" y="146" width="414" height="430"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="430" id="T3F-PA-G5j"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenetMain" translatesAutoresizingMaskIntoConstraints="NO" id="iTX-KK-5xA">
+                                    <rect key="frame" x="8" y="110" width="102" height="130"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="102" id="84y-bF-th4"/>
+                                        <constraint firstAttribute="height" constant="130" id="YW6-H6-FRK"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="WVs-sB-OK6" firstAttribute="leading" secondItem="ZjJ-td-FgY" secondAttribute="leading" id="Mia-P2-ZAg"/>
+                                <constraint firstItem="iTX-KK-5xA" firstAttribute="top" secondItem="ZjJ-td-FgY" secondAttribute="top" constant="110" id="Wex-nB-K8o"/>
+                                <constraint firstAttribute="trailing" secondItem="WVs-sB-OK6" secondAttribute="trailing" id="YDe-xh-kJ5"/>
+                                <constraint firstAttribute="height" constant="2000" id="ctC-sX-XLv"/>
+                                <constraint firstItem="WVs-sB-OK6" firstAttribute="top" secondItem="ZjJ-td-FgY" secondAttribute="top" id="iNh-qt-PdN"/>
+                                <constraint firstItem="1bY-cZ-djs" firstAttribute="leading" secondItem="ZjJ-td-FgY" secondAttribute="leading" id="kl5-N6-1u4"/>
+                                <constraint firstAttribute="trailing" secondItem="1bY-cZ-djs" secondAttribute="trailing" id="nRq-nP-nbq"/>
+                                <constraint firstItem="1bY-cZ-djs" firstAttribute="top" secondItem="WVs-sB-OK6" secondAttribute="bottom" id="rCS-3c-NZW"/>
+                                <constraint firstItem="iTX-KK-5xA" firstAttribute="leading" secondItem="ZjJ-td-FgY" secondAttribute="leading" constant="8" id="uF4-f6-4xc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZjJ-td-FgY" firstAttribute="bottom" secondItem="i1v-Es-wq4" secondAttribute="bottom" id="C9N-Vy-Ehc"/>
+                        <constraint firstItem="ZjJ-td-FgY" firstAttribute="trailing" secondItem="i1v-Es-wq4" secondAttribute="trailing" id="NcW-qn-xf9"/>
+                        <constraint firstItem="ZjJ-td-FgY" firstAttribute="top" secondItem="i1v-Es-wq4" secondAttribute="top" id="Njp-wI-ae0"/>
+                        <constraint firstItem="ZjJ-td-FgY" firstAttribute="leading" secondItem="i1v-Es-wq4" secondAttribute="leading" id="rTw-4U-A8u"/>
+                        <constraint firstItem="ZjJ-td-FgY" firstAttribute="width" secondItem="dGE-lh-q6d" secondAttribute="width" id="xAd-Bu-tmA"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="i1v-Es-wq4"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="dGE-lh-q6d"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="M3u-vo-IdM" firstAttribute="top" secondItem="NPf-Vc-5OP" secondAttribute="bottom" id="C0c-Np-e4o"/>
+                <constraint firstItem="NPf-Vc-5OP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MIl-OH-cki"/>
+                <constraint firstItem="NPf-Vc-5OP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OrP-fd-o9Z"/>
+                <constraint firstItem="NPf-Vc-5OP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uwt-El-6fX"/>
+                <constraint firstItem="M3u-vo-IdM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZD4-Hz-wLa"/>
+                <constraint firstAttribute="bottom" secondItem="M3u-vo-IdM" secondAttribute="bottom" id="xxC-a5-RJq"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tenetGaro" width="493" height="280"/>
+        <image name="tenetMain" width="559" height="815"/>
+    </resources>
+</document>
