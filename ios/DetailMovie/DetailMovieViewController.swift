@@ -119,4 +119,14 @@ extension DetailMovieViewController : UITableViewDelegate, UITableViewDataSource
         
         return cell
     }
+    
+    // 셀 클릭 이벤트
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.navigationController?.pushViewController(EachMovieDetailViewController(), animated: true)
+        default:
+            return
+        }
+    }
 }
