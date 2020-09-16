@@ -41,16 +41,27 @@ class DetailMovieDataManager {
                             
                             detailMovieViewController.movieDetail.image.append(i.image!)
                             
-//                            detailMovieViewController.movieDetail.totalAud.append(i.totalAud!)
-//
-//                            detailMovieViewController.movieDetail.todayAud.append(i.todayAud!)
+                            detailMovieViewController.movieDetail.now.append(i.now!)
                             
-                     
+                            // now
+                            if i.now! == "yes" {
+                                detailMovieViewController.movieDetail.nowMovie.append(i.titleKo!)
+                            }
+                            
+                            // none 값 대체
+                            let alternativeTotal = i.totalAud ?? 0
+                            detailMovieViewController.movieDetail.totalAud.append(alternativeTotal)
+                            
+                            let alternativeToday = i.todayAud ?? 0
+                            detailMovieViewController.movieDetail.todayAud.append(alternativeToday)
+                         
                         }
-                        print("dm : \(detailMovieViewController.movieDetail.titleKo)")
+                        //print("dm : \(detailMovieViewController.movieDetail.todayAud)")
                         
-                        // 리로드 데이터 테이블부
+                        // 리로드 데이터 테이블뷰
                         detailMovieViewController.detailTV.reloadData()
+                        
+                        print("dm : \(detailMovieViewController.movieDetail.nowMovie)")
                         print("finish")
                         
                     } else {

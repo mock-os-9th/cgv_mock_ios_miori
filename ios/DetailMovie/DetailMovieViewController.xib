@@ -74,25 +74,29 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✓현재상영작보기" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-G0-Ms3">
-                    <rect key="frame" x="269" y="161" width="125" height="20.5"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW9-Wm-I9R">
+                    <rect key="frame" x="276" y="155" width="118" height="33"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="125" id="393-7h-jgM"/>
+                        <constraint firstAttribute="width" constant="118" id="bNM-cs-Mpl"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <state key="normal" title="✓현재상영작보기">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapShowNow:" destination="-1" eventType="touchUpInside" id="Wp0-n6-neB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tCe-G0-Ms3" firstAttribute="centerY" secondItem="m2d-dA-C73" secondAttribute="centerY" id="01U-rJ-hY5"/>
                 <constraint firstItem="K1i-MJ-blx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ebr-km-3OP"/>
                 <constraint firstAttribute="bottom" secondItem="K1i-MJ-blx" secondAttribute="bottom" id="Qzj-rm-zsY"/>
                 <constraint firstItem="s3U-W8-HN8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TJz-S8-aKT"/>
                 <constraint firstItem="m2d-dA-C73" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XuF-He-af1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xW9-Wm-I9R" secondAttribute="trailing" constant="20" id="a3j-f3-QHl"/>
                 <constraint firstItem="m2d-dA-C73" firstAttribute="top" secondItem="s3U-W8-HN8" secondAttribute="bottom" constant="18" id="cAe-mY-dIE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tCe-G0-Ms3" secondAttribute="trailing" constant="20" id="kW3-1U-Hn8"/>
+                <constraint firstItem="xW9-Wm-I9R" firstAttribute="centerY" secondItem="m2d-dA-C73" secondAttribute="centerY" id="jcw-FB-vva"/>
                 <constraint firstItem="s3U-W8-HN8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nrs-h4-hD9"/>
                 <constraint firstItem="K1i-MJ-blx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uHM-dn-pbW"/>
                 <constraint firstItem="s3U-W8-HN8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ys7-MK-3Iv"/>
