@@ -11,6 +11,8 @@ import CoreLocation
 
 class HomeViewController: BaseViewController, CLLocationManagerDelegate {
     
+    var firstAuto : Int = 0
+    
     //bottom sheet 기본 호출
     let bottomLauncher = BottomSheetLauncher()
     let bottomLauncherUsingFrames = BottomSheetUsingFrames()
@@ -142,7 +144,10 @@ class HomeViewController: BaseViewController, CLLocationManagerDelegate {
         //navibar 숨기기
         //복구가 안될때는 : 뷰의 top을 superview로 맞춰주고 constant는 0으로
         self.navigationController?.hidesBarsOnSwipe = true
+        
+        
     }
+    
     
     
     //This method will call when you press button.
@@ -175,7 +180,16 @@ class HomeViewController: BaseViewController, CLLocationManagerDelegate {
         //            .isActive = true // ---- 4
         //
         
+        let ud = UserDefaults.standard
         
+        if let jwt = ud.string(forKey: "x-access-token") {
+            //customInputView.isHidden = false
+            self.firstAuto += 1
+            if self.firstAuto == 1 {
+                self.presentAlert(title: "자동로그인", message: "미오리님 환영합니다")
+            }
+        } else {
+        }
         
         // 라벨 언더라인
         let labelString = "#예매차트"
