@@ -26,5 +26,7 @@ struct ColorPalette {
     static let cgvTabColor : UInt = 0xe26248
     // cgv pink color rgb 207 44 108
     static let cgvPink : UInt = 0xCF2C6C
+    // cgv btn
+    static let cgvBtn : UInt = 0xdd6146
     
 }
