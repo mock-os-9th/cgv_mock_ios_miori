@@ -25,7 +25,7 @@ class TopTapViewController: TabmanViewController {
     }
     @IBOutlet weak var xView: UIView!
     
-    private var viewControllers = [TheaterRMainViewController(), UIViewController(),UIViewController()]
+    private var viewControllers = [TheaterRMainViewController(), Tab2ViewController(),Tab2ViewController()]
     
     
     override func viewDidLoad() {
