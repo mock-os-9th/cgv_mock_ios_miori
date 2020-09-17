@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="commentTV" destination="PBC-5K-NK7" id="g7v-ek-Tk6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-7c-CeA" userLabel="line">
+                    <rect key="frame" x="8" y="472" width="398" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="YDI-gq-Z7R"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyD-2E-XOr" userLabel="line">
+                    <rect key="frame" x="8" y="178" width="398" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uRQ-7z-ZPl"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenetmov" translatesAutoresizingMaskIntoConstraints="NO" id="xqK-uk-5Uv">
+                    <rect key="frame" x="19" y="301" width="362" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="f3r-LO-9at"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenetCircle" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-XP-FtK">
+                    <rect key="frame" x="10" y="110" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="D9Z-ek-RhG"/>
+                        <constraint firstAttribute="width" constant="60" id="djG-7e-qd2"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8c-19-0gG">
+                    <rect key="frame" x="171" y="481" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KkS-xo-pEA"/>
+                        <constraint firstAttribute="width" constant="72" id="ukl-YC-Io1"/>
+                    </constraints>
+                    <state key="normal" title="댓글달기">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqn-XU-Eb5">
+                    <rect key="frame" x="19" y="437" width="241" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="댓글 4개 ∙ 조회 5,755 ∙  좋아요 37 ∙  공유 58건">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테넷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF1-TL-98d">
+                    <rect key="frame" x="78" y="110" width="30" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="15s-Al-SzT"/>
+                        <constraint firstAttribute="width" constant="30" id="WzJ-ub-xC3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그냥 봐도 재밌고 IMAX로 보면 더 재밌다는 &lt;테넷&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-m7-YmL">
+                    <rect key="frame" x="19" y="199" width="343" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="NeX-ax-2MZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9월 8일 오전 11:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLr-04-Pc2">
+                    <rect key="frame" x="78" y="139" width="134" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="134" id="WXZ-h3-XLM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#테넷 절찬상영중" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNk-VC-cTJ">
+                    <rect key="frame" x="19" y="272" width="118" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="118" id="tai-J6-kMJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uee-JK-mBQ">
+                    <rect key="frame" x="342" y="481" width="52" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="bge-7w-Tr0"/>
+                    </constraints>
+                    <state key="normal" title="공유하기">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="363-bH-RYn">
+                    <rect key="frame" x="20" y="481" width="39" height="30"/>
+                    <state key="normal" title="좋아요">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#크리스토퍼놀란 이 직접 알려주는 IMAX 관람 포인트!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-fB-zcu">
+                    <rect key="frame" x="19" y="227.5" width="362" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="362" id="Rbf-NA-yvw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehs-fC-kHV">
+                    <rect key="frame" x="0.0" y="519" width="414" height="10"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Fa0-E4-Kib"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PBC-5K-NK7">
+                    <rect key="frame" x="0.0" y="529" width="414" height="367"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="PBC-5K-NK7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1te-LE-cTL"/>
+                <constraint firstItem="PBC-5K-NK7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="53X-h6-N8Y"/>
+                <constraint firstItem="DyD-2E-XOr" firstAttribute="top" secondItem="FrL-XP-FtK" secondAttribute="bottom" constant="8" id="6tp-n0-iqZ"/>
+                <constraint firstItem="e8c-19-0gG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7QA-jX-P4l"/>
+                <constraint firstItem="Tqn-XU-Eb5" firstAttribute="leading" secondItem="xqK-uk-5Uv" secondAttribute="leading" id="7bR-ZR-pqX"/>
+                <constraint firstItem="U3t-fB-zcu" firstAttribute="leading" secondItem="g9y-m7-YmL" secondAttribute="leading" id="86S-n4-ZGf"/>
+                <constraint firstItem="sCD-7c-CeA" firstAttribute="trailing" secondItem="DyD-2E-XOr" secondAttribute="trailing" id="9pC-36-rOJ"/>
+                <constraint firstItem="g9y-m7-YmL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="19" id="BGU-yp-LMX"/>
+                <constraint firstItem="e8c-19-0gG" firstAttribute="top" secondItem="sCD-7c-CeA" secondAttribute="bottom" constant="8" id="D4J-72-UjD"/>
+                <constraint firstItem="sCD-7c-CeA" firstAttribute="leading" secondItem="DyD-2E-XOr" secondAttribute="leading" id="DkW-Kv-ZG7"/>
+                <constraint firstAttribute="bottom" secondItem="PBC-5K-NK7" secondAttribute="bottom" id="MJ3-YJ-kua"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uee-JK-mBQ" secondAttribute="trailing" constant="20" id="SjC-pa-oqC"/>
+                <constraint firstItem="xqK-uk-5Uv" firstAttribute="leading" secondItem="U3t-fB-zcu" secondAttribute="leading" id="U2x-Lw-IFA"/>
+                <constraint firstItem="DyD-2E-XOr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="WVZ-S1-6El"/>
+                <constraint firstItem="RNk-VC-cTJ" firstAttribute="leading" secondItem="U3t-fB-zcu" secondAttribute="leading" id="Xxb-ko-Aho"/>
+                <constraint firstItem="sCD-7c-CeA" firstAttribute="top" secondItem="Tqn-XU-Eb5" secondAttribute="bottom" constant="8" id="Xxh-g5-c8x"/>
+                <constraint firstItem="UF1-TL-98d" firstAttribute="top" secondItem="FrL-XP-FtK" secondAttribute="top" id="YcV-X6-gZs"/>
+                <constraint firstItem="Ehs-fC-kHV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZVl-Yr-ILR"/>
+                <constraint firstItem="RNk-VC-cTJ" firstAttribute="top" secondItem="U3t-fB-zcu" secondAttribute="bottom" constant="24" id="ZjX-1y-uia"/>
+                <constraint firstItem="Ehs-fC-kHV" firstAttribute="top" secondItem="e8c-19-0gG" secondAttribute="bottom" constant="8" id="Zp2-Gf-SHU"/>
+                <constraint firstItem="U3t-fB-zcu" firstAttribute="top" secondItem="g9y-m7-YmL" secondAttribute="bottom" constant="8" id="dFR-gb-eNL"/>
+                <constraint firstItem="UF1-TL-98d" firstAttribute="leading" secondItem="FrL-XP-FtK" secondAttribute="trailing" constant="8" id="fu7-ec-l61"/>
+                <constraint firstItem="g9y-m7-YmL" firstAttribute="top" secondItem="DyD-2E-XOr" secondAttribute="bottom" constant="20" id="gIp-9Y-Cmd"/>
+                <constraint firstItem="FrL-XP-FtK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="22" id="hc1-9q-l2C"/>
+                <constraint firstItem="xqK-uk-5Uv" firstAttribute="trailing" secondItem="U3t-fB-zcu" secondAttribute="trailing" id="hgw-U9-CUS"/>
+                <constraint firstItem="xqK-uk-5Uv" firstAttribute="top" secondItem="RNk-VC-cTJ" secondAttribute="bottom" constant="8.5" id="mbZ-wk-zGM"/>
+                <constraint firstItem="FrL-XP-FtK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="p0c-hK-6oh"/>
+                <constraint firstItem="yLr-04-Pc2" firstAttribute="top" secondItem="UF1-TL-98d" secondAttribute="bottom" constant="8" id="poq-b0-Kya"/>
+                <constraint firstItem="Tqn-XU-Eb5" firstAttribute="top" secondItem="xqK-uk-5Uv" secondAttribute="bottom" constant="8" id="rWm-C8-fKq"/>
+                <constraint firstItem="yLr-04-Pc2" firstAttribute="leading" secondItem="UF1-TL-98d" secondAttribute="leading" id="rge-Q5-b3g"/>
+                <constraint firstItem="Ehs-fC-kHV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rlw-Ma-JHk"/>
+                <constraint firstItem="363-bH-RYn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xUK-3M-H0h"/>
+                <constraint firstAttribute="trailing" secondItem="DyD-2E-XOr" secondAttribute="trailing" constant="8" id="xfl-zv-5Yr"/>
+                <constraint firstItem="PBC-5K-NK7" firstAttribute="top" secondItem="Ehs-fC-kHV" secondAttribute="bottom" id="z5x-u3-RWG"/>
+                <constraint firstItem="uee-JK-mBQ" firstAttribute="top" secondItem="sCD-7c-CeA" secondAttribute="bottom" constant="8" id="z76-kE-KHE"/>
+                <constraint firstItem="363-bH-RYn" firstAttribute="top" secondItem="sCD-7c-CeA" secondAttribute="bottom" constant="8" id="zqs-x2-aKM"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tenetCircle" width="83" height="87"/>
+        <image name="tenetmov" width="742" height="419"/>
+    </resources>
+</document>

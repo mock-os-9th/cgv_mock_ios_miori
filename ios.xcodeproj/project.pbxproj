@@ -21,6 +21,10 @@
 		3D2D3A07250A5B9600B1B6D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2D3A06250A5B9600B1B6D4 /* WebKit.framework */; };
 		3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AA250172F700925D10 /* ResultResponse.swift */; };
 		3D3169AD2501735900925D10 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3169AC2501735900925D10 /* SignUpDataManager.swift */; };
+		3D334B562512735300BB989E /* EachMovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D334B542512735300BB989E /* EachMovieDetailViewController.swift */; };
+		3D334B572512735300BB989E /* EachMovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D334B552512735300BB989E /* EachMovieDetailViewController.xib */; };
+		3D334B5B2512855C00BB989E /* DetailMTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D334B592512855C00BB989E /* DetailMTabCollectionViewCell.swift */; };
+		3D334B5C2512855C00BB989E /* DetailMTabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D334B5A2512855C00BB989E /* DetailMTabCollectionViewCell.xib */; };
 		3D4BC24425025F9D00252FD7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BC24325025F9D00252FD7 /* LoginModel.swift */; };
 		3D59191E24FAD6C6005CEAB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */; };
 		3D59191F24FAD6C6005CEAB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */; };
@@ -87,6 +91,11 @@
 		3DC5FED32510A66500627AA3 /* DetailMovieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FED22510A66500627AA3 /* DetailMovieDataManager.swift */; };
 		3DDFED1525095A9100944295 /* SelectSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFED1325095A9100944295 /* SelectSeatViewController.swift */; };
 		3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFED1425095A9100944295 /* SelectSeatViewController.xib */; };
+		3DE0A8672512BC5900A63B5B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0A8652512BC5900A63B5B /* CommentViewController.swift */; };
+		3DE0A8682512BC5900A63B5B /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE0A8662512BC5900A63B5B /* CommentViewController.xib */; };
+		3DE0A86C2512BF5400A63B5B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0A86A2512BF5400A63B5B /* CommentTableViewCell.swift */; };
+		3DE0A86D2512BF5400A63B5B /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE0A86B2512BF5400A63B5B /* CommentTableViewCell.xib */; };
+		3DE0A8702512CAD200A63B5B /* FlexibleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0A86F2512CAD200A63B5B /* FlexibleTextView.swift */; };
 		3DE24879250C0E7100A91419 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24878250C0E7100A91419 /* ScheduleResponse.swift */; };
 		3DE2487B250C0E8D00A91419 /* MovieScheduleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2487A250C0E8D00A91419 /* MovieScheduleDataManager.swift */; };
 		3DF2288E2501818100A7847F /* LoginResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2288D2501818100A7847F /* LoginResultResponse.swift */; };
@@ -129,6 +138,10 @@
 		3D2D3A06250A5B9600B1B6D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3D3169AA250172F700925D10 /* ResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
 		3D3169AC2501735900925D10 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
+		3D334B542512735300BB989E /* EachMovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachMovieDetailViewController.swift; sourceTree = "<group>"; };
+		3D334B552512735300BB989E /* EachMovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EachMovieDetailViewController.xib; sourceTree = "<group>"; };
+		3D334B592512855C00BB989E /* DetailMTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D334B5A2512855C00BB989E /* DetailMTabCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMTabCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D4BC24325025F9D00252FD7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		3D59191C24FAD6C6005CEAB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D59191D24FAD6C6005CEAB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -195,6 +208,11 @@
 		3DC5FED22510A66500627AA3 /* DetailMovieDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieDataManager.swift; sourceTree = "<group>"; };
 		3DDFED1325095A9100944295 /* SelectSeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatViewController.swift; sourceTree = "<group>"; };
 		3DDFED1425095A9100944295 /* SelectSeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSeatViewController.xib; sourceTree = "<group>"; };
+		3DE0A8652512BC5900A63B5B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		3DE0A8662512BC5900A63B5B /* CommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		3DE0A86A2512BF5400A63B5B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3DE0A86B2512BF5400A63B5B /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		3DE0A86F2512CAD200A63B5B /* FlexibleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleTextView.swift; sourceTree = "<group>"; };
 		3DE24878250C0E7100A91419 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
 		3DE2487A250C0E8D00A91419 /* MovieScheduleDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScheduleDataManager.swift; sourceTree = "<group>"; };
 		3DF2288D2501818100A7847F /* LoginResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultResponse.swift; sourceTree = "<group>"; };
@@ -307,6 +325,26 @@
 				3D3169AA250172F700925D10 /* ResultResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D334B532512730D00BB989E /* EachMovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0A86E2512CA4800A63B5B /* CustomTextField */,
+				3D334B582512852B00BB989E /* TabCollectionCell */,
+				3D334B542512735300BB989E /* EachMovieDetailViewController.swift */,
+				3D334B552512735300BB989E /* EachMovieDetailViewController.xib */,
+			);
+			path = EachMovieDetail;
+			sourceTree = "<group>";
+		};
+		3D334B582512852B00BB989E /* TabCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D334B592512855C00BB989E /* DetailMTabCollectionViewCell.swift */,
+				3D334B5A2512855C00BB989E /* DetailMTabCollectionViewCell.xib */,
+			);
+			path = TabCollectionCell;
 			sourceTree = "<group>";
 		};
 		3D4BC24225025F6600252FD7 /* Model */ = {
@@ -651,6 +689,33 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		3DE0A8642512BC3C00A63B5B /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0A8692512BF3F00A63B5B /* CommentCell */,
+				3DE0A8652512BC5900A63B5B /* CommentViewController.swift */,
+				3DE0A8662512BC5900A63B5B /* CommentViewController.xib */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		3DE0A8692512BF3F00A63B5B /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0A86A2512BF5400A63B5B /* CommentTableViewCell.swift */,
+				3DE0A86B2512BF5400A63B5B /* CommentTableViewCell.xib */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		3DE0A86E2512CA4800A63B5B /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3DE0A86F2512CAD200A63B5B /* FlexibleTextView.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
 		3DE24875250C0C6A00A91419 /* MovieSchedule */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,6 +860,8 @@
 				3D5CB1F324FE179400A12CF7 /* SignUp */,
 				3D617F4624FFBEB900EF92E0 /* TheaterReservation */,
 				3D06AF7E250FC4E8005661DA /* DetailMovie */,
+				3D334B532512730D00BB989E /* EachMovieDetail */,
+				3DE0A8642512BC3C00A63B5B /* Comment */,
 				3D2D3A00250A588700B1B6D4 /* KakaoPay */,
 				BD9BF17022F9C318009E47EB /* Splash */,
 				BD9BF16F22F9C314009E47EB /* Main */,
@@ -872,16 +939,20 @@
 				3DB7BBF925100F5D00853F62 /* SignUpSuccessPopUp.storyboard in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				3D262C702508A981009A5288 /* TimeSeatCollectionViewCell.xib in Resources */,
+				3DE0A86D2512BF5400A63B5B /* CommentTableViewCell.xib in Resources */,
 				3D617F682500C05F00EF92E0 /* ContainerViewController.xib in Resources */,
 				3D2D3A05250A58AE00B1B6D4 /* KakaopayViewController.xib in Resources */,
 				3D5CB1F224FE0FE000A12CF7 /* LInputViewController.xib in Resources */,
 				3D262C762508B554009A5288 /* ReserViewController.xib in Resources */,
+				3DE0A8682512BC5900A63B5B /* CommentViewController.xib in Resources */,
+				3D334B572512735300BB989E /* EachMovieDetailViewController.xib in Resources */,
 				3DC5FECD25109EDC00627AA3 /* DetailMovieTableViewCell.xib in Resources */,
 				3DABA5A5250BBBD200879D9C /* SelectPosterCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				3D71E51024FAC6020061B556 /* LogInMenuViewController.xib in Resources */,
 				3DABA595250B9D8A00879D9C /* TheaterTableViewCell.xib in Resources */,
 				3D5B15C92507A9B00072C8D2 /* TopTapViewController.xib in Resources */,
+				3D334B5C2512855C00BB989E /* DetailMTabCollectionViewCell.xib in Resources */,
 				3DDFED1625095A9100944295 /* SelectSeatViewController.xib in Resources */,
 				3DABA5A0250BB7CC00879D9C /* SelectMovieViewController.xib in Resources */,
 				3D617F4E24FFC21700EF92E0 /* TheaterRMainViewController.xib in Resources */,
@@ -968,6 +1039,7 @@
 				3D262C6F2508A981009A5288 /* TimeSeatCollectionViewCell.swift in Sources */,
 				3D59192124FAF72C005CEAB6 /* SlideRight.swift in Sources */,
 				3D617F4D24FFC21700EF92E0 /* TheaterRMainViewController.swift in Sources */,
+				3DE0A8672512BC5900A63B5B /* CommentViewController.swift in Sources */,
 				3D617F582500B28600EF92E0 /* BottomSheetLauncher.swift in Sources */,
 				3D617F602500B3C300EF92E0 /* NotchViewController.swift in Sources */,
 				3DABA59F250BB7CC00879D9C /* SelectMovieViewController.swift in Sources */,
@@ -985,6 +1057,7 @@
 				3D617F5A2500B2B600EF92E0 /* NotchView.swift in Sources */,
 				3D2D39FA250A3DCC00B1B6D4 /* GetUserNameDataManager.swift in Sources */,
 				3D5B15C82507A9B00072C8D2 /* TopTapViewController.swift in Sources */,
+				3DE0A86C2512BF5400A63B5B /* CommentTableViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				3D5B15C425076F450072C8D2 /* GetPosterDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
@@ -993,6 +1066,7 @@
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				3D617F4924FFBEE200EF92E0 /* TheaterRViewController.swift in Sources */,
 				3D262C782508B925009A5288 /* SheetViewReserController.swift in Sources */,
+				3D334B562512735300BB989E /* EachMovieDetailViewController.swift in Sources */,
 				3D5B15BA25075E760072C8D2 /* MovieCollectionViewCell.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
@@ -1017,7 +1091,9 @@
 				3D3169AB250172F700925D10 /* ResultResponse.swift in Sources */,
 				3DB7BBF6250FE94D00853F62 /* RadioButton.swift in Sources */,
 				3D663363250B3BFB004634CC /* TopImageCollectionViewCell.swift in Sources */,
+				3D334B5B2512855C00BB989E /* DetailMTabCollectionViewCell.swift in Sources */,
 				3D5B15AC250677B40072C8D2 /* SendPhoneAuthDataManager.swift in Sources */,
+				3DE0A8702512CAD200A63B5B /* FlexibleTextView.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				3D852D13250B50FF003A98EB /* HomeDataManager.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
